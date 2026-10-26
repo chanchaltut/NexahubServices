@@ -109,11 +109,27 @@ img {
   }
   .reveal-card::before {
     content: '';
-    @apply absolute inset-0 opacity-0 transition-opacity duration-500;
-    background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-ink) 100%);
+    @apply absolute inset-0 opacity-0;
+    background: linear-gradient(135deg, var(--color-brand-dark) 0%, var(--color-ink) 100%);
+    /* hover-out: fill lingers until the text has turned dark again */
+    transition: opacity 320ms cubic-bezier(0.4, 0, 1, 1);
   }
-  .reveal-card:hover::before { @apply opacity-100; }
+  .reveal-card:hover::before {
+    @apply opacity-100;
+    /* hover-in: fill lands first, before the text turns light */
+    transition: opacity 180ms cubic-bezier(0, 0, 0.2, 1);
+  }
   .reveal-card:hover { @apply border-transparent shadow-soft -translate-y-1; }
+}
+
+/* Keep card text readable at every point of the hover fade */
+.reveal-card .z-10 [class*='transition'] {
+  transition-duration: 160ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.reveal-card:hover .z-10 [class*='transition'] {
+  transition-duration: 260ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 /* ─── HUB NETWORK PATTERN (decorative) ───────────────────── */
