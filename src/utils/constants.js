@@ -44,7 +44,6 @@ export const BRAND = {
 export const DEVELOPER = {
   name: 'Code Hyphen',
   url: 'https://codehyphen.in',
-  whatsapp: '919911681113',
 }
 
 // Build a WhatsApp deep-link with a pre-filled message

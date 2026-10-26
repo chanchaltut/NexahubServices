@@ -125,10 +125,7 @@ const Footer = () => {
             <span className="hidden md:inline mx-2 opacity-40">|</span>
             <span className="block md:inline mt-1 md:mt-0 text-white/50">
               Designed & developed by{' '}
-              <a href={DEVELOPER.url} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors font-semibold">{DEVELOPER.name}</a>
-              <a href={`https://wa.me/${DEVELOPER.whatsapp}?text=${encodeURIComponent(`Hi ${DEVELOPER.name}! I saw your work on ${BRAND.domain}.`)}`} target="_blank" rel="noopener noreferrer" className="inline-flex align-middle ml-1.5 text-white/50 hover:text-[#25d366] transition-colors" aria-label={`Contact ${DEVELOPER.name} on WhatsApp`}>
-                <FaWhatsapp />
-              </a>
+              <a href={DEVELOPER.url} target="_blank" rel="noopener" title={`${DEVELOPER.name} — Website Design & Development`} className="hover:text-white transition-colors font-semibold">{DEVELOPER.name}</a>
             </span>
           </p>
           <div className="flex items-center gap-3">
