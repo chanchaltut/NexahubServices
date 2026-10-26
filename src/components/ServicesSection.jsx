@@ -84,7 +84,7 @@ const ServiceCard = ({ service, onOpen }) => (
   <button onClick={() => onOpen(service)} className="reveal-card group text-left p-4 sm:p-6 flex flex-col h-full w-full">
     <div className="relative z-10 flex sm:flex-col items-center sm:items-stretch gap-4 sm:gap-0 h-full w-full">
       <div className="flex items-start justify-between sm:mb-6 flex-shrink-0">
-        <span className="w-12 h-12 rounded-xl bg-brand-light group-hover:bg-white/15 flex items-center justify-center transition-colors duration-300">
+        <span className="w-12 h-12 rounded-xl bg-brand-light ring-1 ring-brand/15 group-hover:bg-white/15 group-hover:ring-white/20 flex items-center justify-center transition-colors duration-300">
           <i className={`${service.icon} text-2xl text-brand group-hover:text-white transition-colors duration-300`} />
         </span>
         {service.badge && (
@@ -97,9 +97,9 @@ const ServiceCard = ({ service, onOpen }) => (
         <h3 className="text-[16px] sm:text-xl font-semibold !text-ink group-hover:!text-white transition-colors duration-300 sm:mb-2 leading-snug">{service.title}</h3>
         <p className="text-brand group-hover:text-sun text-[13px] font-bold sm:mb-5 transition-colors">From {service.startingPrice}</p>
       </div>
-      <i className="ri-arrow-right-s-line text-2xl text-gray-400 sm:hidden" />
-      <div className="hidden sm:block w-full h-px bg-gray-200 group-hover:bg-white/20 transition-colors duration-300 mb-5" />
-      <p className="hidden sm:block text-gray-500 group-hover:text-white/80 text-[14.5px] leading-relaxed mb-7 flex-1 transition-colors duration-300">{service.shortDesc}</p>
+      <i className="ri-arrow-right-s-line text-2xl text-ink/40 sm:hidden" />
+      <div className="hidden sm:block w-full h-px bg-ink/10 group-hover:bg-white/20 transition-colors duration-300 mb-5" />
+      <p className="hidden sm:block text-gray-600 group-hover:text-white/85 text-[14.5px] leading-relaxed mb-7 flex-1 transition-colors duration-300">{service.shortDesc}</p>
       <span className="hidden sm:inline-flex items-center text-[14px] font-semibold text-ink group-hover:text-white transition-colors duration-300">
         View {service.subcategories.length} services
         <span className="ml-1.5 tracking-tighter text-[16px] leading-none group-hover:translate-x-1 transition-transform">&gt;&gt;</span>
@@ -122,7 +122,7 @@ const ServicesSection = () => {
   }, [query]);
 
   return (
-    <section id="services" ref={sectionRef} className="py-20 md:py-24 bg-slate-50 relative overflow-hidden scroll-mt-20" aria-label="Our services">
+    <section id="services" ref={sectionRef} className="py-20 md:py-24 bg-mist relative overflow-hidden scroll-mt-20" aria-label="Our services">
       <div className="absolute top-0 right-0 -mt-20 -mr-20 w-[500px] h-[500px] bg-brand/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-[500px] h-[500px] bg-ink/5 rounded-full blur-3xl pointer-events-none" />
 

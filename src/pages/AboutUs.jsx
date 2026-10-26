@@ -43,7 +43,7 @@ const AboutUs = () => (
             <div className="relative z-10">
               <i className={`${v.icon} text-3xl text-brand group-hover:text-sun transition-colors mb-5 block`} />
               <h3 className="text-xl font-bold mb-3 group-hover:!text-white transition-colors">{v.title}</h3>
-              <p className="text-gray-500 group-hover:text-white/80 text-[15px] leading-relaxed transition-colors">{v.text}</p>
+              <p className="text-gray-600 group-hover:text-white/85 text-[15px] leading-relaxed transition-colors">{v.text}</p>
             </div>
           </div>
         ))}

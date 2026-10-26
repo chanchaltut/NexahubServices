@@ -76,7 +76,7 @@ const ServicePage = () => {
                     <i className={`${h.icon} text-2xl text-brand group-hover:text-sun transition-colors`} />
                   </span>
                   <h3 className="text-xl font-bold mb-2 group-hover:!text-white transition-colors">{h.title}</h3>
-                  <p className="text-gray-500 group-hover:text-white/80 text-[15px] leading-relaxed transition-colors">{h.text}</p>
+                  <p className="text-gray-600 group-hover:text-white/85 text-[15px] leading-relaxed transition-colors">{h.text}</p>
                 </div>
               </div>
             ))}
