@@ -1,0 +1,198 @@
+/* ═══════════════════════════════════════════════════════════
+   Nexa Hub Services — Global CSS
+   Design system: Deep Ink #0E2A33 + Emerald Teal #22A38B + Sun #F5B841
+   Mobile-first, fully responsive
+═══════════════════════════════════════════════════════════ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS CUSTOM PROPERTIES ──────────────────────────────── */
+:root {
+  --color-ink:        #0E2A33;
+  --color-ink-700:    #163A45;
+  --color-brand:      #22A38B;
+  --color-brand-dark: #1B8A75;
+  --color-mist:       #EEF3F1;
+  --color-sun:        #F5B841;
+  --color-muted:      #6B7280;
+
+  /* Viewport height (set via JS for iOS Safari) */
+  --vh: 1vh;
+}
+
+/* ─── BASE ───────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: var(--color-ink);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-ink);
+  letter-spacing: -0.015em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── SCROLLBAR ──────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 8px; }
+::-webkit-scrollbar-track  { background: #f3f6f5; }
+::-webkit-scrollbar-thumb  { background: var(--color-brand); border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-brand-dark); }
+* { scrollbar-width: thin; scrollbar-color: var(--color-brand) #f3f6f5; }
+
+.thin-scroll::-webkit-scrollbar { width: 5px; }
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* ─── FOCUS ──────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ─── COMPONENTS ─────────────────────────────────────────── */
+@layer components {
+  /* Pill eyebrow above section headings */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-brand/20 text-brand font-bold text-[12px] tracking-[0.18em] uppercase shadow-sm;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply w-2 h-2 rounded-full bg-brand;
+  }
+  .eyebrow-outline {
+    @apply inline-flex items-center px-5 py-1.5 rounded-full border border-gray-200 text-gray-500 text-[14px] font-medium;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-[44px] font-bold text-ink leading-[1.2];
+  }
+
+  .btn-brand {
+    @apply inline-flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white px-7 py-3.5 rounded-full font-bold text-[15px] transition-all duration-300 shadow-md hover:shadow-glow;
+  }
+  .btn-ink {
+    @apply inline-flex items-center justify-center gap-2 bg-ink hover:bg-ink-700 text-white px-7 py-3.5 rounded-full font-bold text-[15px] transition-all duration-300 shadow-md;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 border border-gray-200 hover:border-brand text-ink hover:text-brand px-7 py-3.5 rounded-full font-semibold text-[15px] transition-all duration-300;
+  }
+
+  /* Gradient-reveal card (hover fills with brand gradient) */
+  .reveal-card {
+    @apply relative overflow-hidden bg-white rounded-2xl border border-gray-200 transition-all duration-500;
+  }
+  .reveal-card::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-500;
+    background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-ink) 100%);
+  }
+  .reveal-card:hover::before { @apply opacity-100; }
+  .reveal-card:hover { @apply border-transparent shadow-soft -translate-y-1; }
+}
+
+/* ─── HUB NETWORK PATTERN (decorative) ───────────────────── */
+.hub-pattern {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.10) 1px, transparent 0);
+  background-size: 26px 26px;
+}
+.hub-pattern-light {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(14,42,51,0.07) 1px, transparent 0);
+  background-size: 26px 26px;
+}
+
+/* ─── PANEL / MODAL KEYFRAMES ───────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ─── MARQUEE ────────────────────────────────────────────── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+.marquee-wrap:hover .marquee-track { animation-play-state: paused; }
+
+/* ─── SCROLL REVEAL (IntersectionObserver driven) ────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── ACCORDION (grid-rows trick, smooth height) ─────────── */
+.accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease, opacity 0.35s ease;
+  opacity: 0;
+}
+.accordion-body.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.accordion-body > div { overflow: hidden; }
+
+/* ─── MOBILE SAFE AREA ───────────────────────────────────── */
+.pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+
+/* ─── REDUCED MOTION ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+
+/* ─── PRINT ──────────────────────────────────────────────── */
+@media print {
+  .no-print { display: none !important; }
+}
