@@ -44,13 +44,13 @@ const StatsBar = () => {
           <p className="relative text-gray-500 text-[15px] leading-relaxed max-w-2xl mx-auto mb-10 md:mb-14">
             Every number reflects a business that now spends less time on paperwork and more time on growth.
           </p>
-          <div className="relative w-full h-px bg-gray-300/60 mb-10 md:mb-14 max-w-4xl mx-auto" />
+          <div className="relative w-24 spectrum-bar mb-10 md:mb-14 mx-auto" />
           <div className="relative grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-8 w-full max-w-4xl mx-auto">
             {STATS.map((stat, i) => (
               <div key={stat.label} className="flex flex-col items-center">
-                <p className="text-[40px] md:text-[52px] font-bold text-ink leading-none mb-3 tabular-nums">
+                <p className="font-display italic text-[40px] md:text-[52px] font-extrabold text-ink leading-none mb-3 tabular-nums">
                   <span ref={(el) => (countersRef.current[i] = el)}>0</span>
-                  <span className="text-brand">{stat.suffix}</span>
+                  <span className="text-gradient">{stat.suffix}</span>
                 </p>
                 <p className="text-gray-500 text-[14px] md:text-[15px] font-medium">{stat.label}</p>
               </div>

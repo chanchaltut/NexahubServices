@@ -65,13 +65,15 @@ const Footer = () => {
 
   return (
     <footer className="bg-ink relative overflow-hidden pt-20 pb-8 text-white">
+      <div className="absolute inset-x-0 top-0 spectrum-bar rounded-none" />
       <div className="absolute inset-0 hub-pattern opacity-50 pointer-events-none" />
+      <div className="absolute -top-40 -left-40 w-[520px] h-[520px] rounded-full bg-violet/20 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_0.8fr_1fr] gap-12 lg:gap-10 mb-16">
           <div className="flex flex-col">
             <Link to="/" className="mb-6 w-fit" aria-label={`${BRAND.name} — Home`}>
-              <Logo variant="light" className="h-10" />
+              <Logo variant="light" className="h-12" />
             </Link>
             <p className="text-white/70 text-[14px] leading-[1.8] mb-6 max-w-sm">
               Empowering startups & MSMEs with strategic advisory, funding, compliance and business registration from A to Z.
@@ -132,7 +134,7 @@ const Footer = () => {
             {socials.map(({ icon, href, label }) => {
               const Icon = icon;
               return (
-                <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-white/70 hover:bg-brand hover:text-white transition-all">
+                <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="w-9 h-9 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-white/70 hover:bg-brand-gradient hover:text-white transition-all">
                   <Icon className="text-[13px]" />
                 </a>
               );

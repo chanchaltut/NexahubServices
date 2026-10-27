@@ -10,8 +10,8 @@ const initials = founder.name.split(' ').filter(Boolean).map((w) => w[0]).slice(
 const Monogram = () => (
   <div className="relative w-full h-full bg-ink flex items-center justify-center overflow-hidden">
     <div className="absolute inset-0 hub-pattern" />
-    <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-brand/40 blur-3xl" />
-    <div className="absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-sun/25 blur-3xl" />
+    <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-violet/50 blur-3xl" />
+    <div className="absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-brand/35 blur-3xl" />
     <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full border border-white/15 bg-white/5 backdrop-blur-md flex items-center justify-center shadow-2xl">
       <div className="absolute inset-3 rounded-full border border-dashed border-sun/40 animate-[spin_30s_linear_infinite]" />
       <span className="text-white text-6xl md:text-7xl font-bold tracking-tight">{initials}</span>

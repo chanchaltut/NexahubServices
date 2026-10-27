@@ -60,7 +60,7 @@ const ServicePage = () => {
               <p className="text-white font-bold text-[16px]">{s.value}</p>
             </div>
           ))}
-          <a href={waLink(service.whatsappMsg)} target="_blank" rel="noopener noreferrer" className="btn-brand hover:!bg-white hover:!text-ink w-full sm:w-auto">
+          <a href={waLink(service.whatsappMsg)} target="_blank" rel="noopener noreferrer" className="btn-brand hover:!bg-none hover:!bg-white hover:!text-ink w-full sm:w-auto">
             <i className="ri-whatsapp-line text-lg" /> Get Started
           </a>
         </div>
@@ -118,7 +118,7 @@ const ServicePage = () => {
 
           <aside className="lg:sticky lg:top-28 rounded-4xl bg-ink text-white p-7 sm:p-8 relative overflow-hidden">
             <div className="absolute inset-0 hub-pattern" />
-            <div className="absolute -top-20 -right-20 w-56 h-56 bg-brand/30 rounded-full blur-3xl" />
+            <div className="absolute -top-20 -right-20 w-56 h-56 bg-violet/40 rounded-full blur-3xl" />
             <div className="relative">
               <p className="text-sun text-[12px] font-bold uppercase tracking-widest mb-2">Free consultation</p>
               <h3 className="!text-white text-2xl font-bold mb-3">Talk to a {service.shortTitle} expert</h3>

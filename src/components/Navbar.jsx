@@ -113,7 +113,7 @@ const Navbar = () => {
       <header className={`sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300 ${scrolled ? 'py-3 shadow-soft' : 'py-4 lg:py-5'}`}>
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between">
           <Link to="/" aria-label={`${BRAND.name} — Home`} className="flex-shrink-0">
-            <Logo className="h-10" />
+            <Logo className="h-10 sm:h-11" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-9" aria-label="Main navigation">
@@ -125,7 +125,7 @@ const Navbar = () => {
                 >
                   {link.name}
                   {link.mega && <i className="ri-arrow-down-s-line text-base transition-transform group-hover:rotate-180" />}
-                  <span className={`absolute left-0 bottom-0 h-[2px] bg-brand transition-all duration-300 ${isActive(link.href) ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+                  <span className={`absolute left-0 bottom-0 h-[2px] rounded-full bg-brand-gradient transition-all duration-300 ${isActive(link.href) ? 'w-full' : 'w-0 group-hover:w-full'}`} />
                 </Link>
                 {link.mega && <MegaMenu />}
               </div>
@@ -163,7 +163,7 @@ const Navbar = () => {
           aria-label="Mobile navigation"
         >
           <div className="p-5 border-b border-gray-100 flex items-center justify-between">
-            <Logo className="h-9" />
+            <Logo className="h-10" />
             <button onClick={() => setIsOpen(false)} className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-red-50 transition-colors" aria-label="Close menu">
               <i className="ri-close-line text-2xl" />
             </button>
@@ -212,7 +212,7 @@ const Navbar = () => {
           </nav>
 
           <div className="p-5 bg-mist/60 border-t border-gray-100 space-y-4 pb-safe">
-            <a href={BRAND.phoneLink} className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-white bg-brand shadow-lg active:scale-95 transition-transform">
+            <a href={BRAND.phoneLink} className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-white bg-brand-gradient shadow-lg active:scale-95 transition-transform">
               <i className="ri-phone-fill" /> Call Us Now
             </a>
             <a href={`mailto:${BRAND.email}`} className="flex items-center gap-3 text-[14px] font-semibold text-gray-600 hover:text-brand">

@@ -41,13 +41,13 @@ const DisclaimerModal = () => {
         <div className="relative bg-ink px-6 pt-6 pb-8 overflow-hidden">
           <div className="absolute inset-0 hub-pattern" />
           <div className="relative flex items-start justify-between">
-            <Logo variant="light" className="h-9" />
+            <Logo variant="light" className="h-10" />
             <button onClick={dismiss} className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center" aria-label="Close">
               <i className="ri-close-line text-xl" />
             </button>
           </div>
           <h2 className="relative !text-white text-2xl font-bold mt-6 leading-snug">
-            Start, fund & grow — <span className="text-sun">we handle the rest.</span>
+            Start, fund & grow — <span className="text-gradient">we handle the rest.</span>
           </h2>
         </div>
 

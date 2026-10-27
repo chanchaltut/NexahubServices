@@ -28,11 +28,11 @@ const PageHero = ({ eyebrow, title, highlight, description, crumbs = [], image =
 
         {eyebrow && (
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-white/90 font-bold text-[12px] tracking-[0.18em] uppercase mb-5">
-            <span className="w-2 h-2 rounded-full bg-sun" />{eyebrow}
+            <span className="spectrum-bar w-5" />{eyebrow}
           </span>
         )}
-        <h1 className="text-[34px] md:text-5xl lg:text-[58px] font-semibold !text-white leading-[1.12] tracking-tight max-w-4xl mb-5">
-          {title} {highlight && <span className="text-sun">{highlight}</span>}
+        <h1 className="text-[34px] md:text-5xl lg:text-[58px] font-extrabold !text-white leading-[1.12] tracking-tight max-w-4xl mb-5">
+          {title} {highlight && <span className="text-gradient">{highlight}</span>}
         </h1>
         {description && <p className="text-white/80 text-[15px] md:text-lg leading-relaxed max-w-2xl">{description}</p>}
         {children}

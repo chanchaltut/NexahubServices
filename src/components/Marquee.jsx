@@ -9,9 +9,9 @@ const Marquee = () => {
     <div className="marquee-wrap overflow-hidden bg-ink py-4 -rotate-[0.6deg] my-2" aria-hidden="true">
       <div className="marquee-track">
         {items.map((item, i) => (
-          <span key={i} className="flex items-center gap-4 px-5 text-white text-[15px] md:text-[17px] font-semibold whitespace-nowrap">
+          <span key={i} className="flex items-center gap-4 px-5 text-white text-[15px] md:text-[17px] font-display italic font-bold tracking-wide whitespace-nowrap">
             {item}
-            <i className="ri-star-fill text-sun text-xs" />
+            <i className="ri-star-fill text-brand text-xs" />
           </span>
         ))}
       </div>

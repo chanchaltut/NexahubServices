@@ -5,7 +5,7 @@ const FloatingActions = () => (
   <div className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-3 no-print">
     <a
       href={BRAND.phoneLink}
-      className="group flex items-center gap-2 bg-brand hover:bg-brand-dark text-white rounded-full shadow-xl ring-2 ring-white/80 h-12 pl-3.5 pr-3.5 sm:hover:pr-5 transition-all duration-500"
+      className="group flex items-center gap-2 bg-brand bg-brand-gradient hover:brightness-110 text-white rounded-full shadow-xl ring-2 ring-white/80 h-12 pl-3.5 pr-3.5 sm:hover:pr-5 transition-all duration-500"
       aria-label={`Call ${BRAND.phone}`}
     >
       <i className="ri-phone-fill text-xl" />

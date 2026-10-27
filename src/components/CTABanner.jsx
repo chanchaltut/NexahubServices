@@ -16,7 +16,7 @@ const CTABanner = () => (
       <div className="relative z-10 w-full px-6 md:px-14 pb-10 md:pb-14 pt-40 grid lg:grid-cols-2 gap-10 items-end">
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold !text-white leading-[1.2] mb-5">
-            Ready to Take Your Business <span className="text-sun">to the Next Level?</span>
+            Ready to Take Your Business <span className="text-gradient">to the Next Level?</span>
           </h2>
           <p className="text-white/80 text-[15px] md:text-[16px] max-w-lg">
             Join entrepreneurs across India who trust {BRAND.name} with their registrations, government funding and day-to-day compliance.

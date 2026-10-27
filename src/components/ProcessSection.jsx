@@ -8,7 +8,8 @@ const ProcessSection = () => {
   return (
     <section ref={ref} className="py-20 md:py-24 bg-ink relative overflow-hidden" aria-label="How it works">
       <div className="absolute inset-0 hub-pattern pointer-events-none" />
-      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-brand/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-violet/30 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -right-20 w-[460px] h-[360px] bg-berry/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
@@ -28,10 +29,10 @@ const ProcessSection = () => {
               className="reveal group relative rounded-2xl bg-ink-700/60 border border-white/10 hover:border-brand/60 p-7 transition-colors duration-300"
               style={{ transitionDelay: `${i * 90}ms` }}
             >
-              <span className="absolute top-5 right-6 text-[56px] font-bold leading-none text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.18)] group-hover:[-webkit-text-stroke:1px_rgba(245,184,65,0.7)] transition-all">
+              <span className="absolute top-5 right-6 text-[56px] font-bold leading-none text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.18)] group-hover:[-webkit-text-stroke:1px_rgba(255,170,28,0.75)] transition-all">
                 {step.step}
               </span>
-              <span className="w-14 h-14 rounded-2xl bg-brand flex items-center justify-center mb-8 shadow-glow">
+              <span className="w-14 h-14 rounded-2xl bg-brand-gradient flex items-center justify-center mb-8 shadow-glow">
                 <i className={`${step.icon} text-2xl text-white`} />
               </span>
               <h3 className="!text-white text-xl font-semibold mb-2">{step.title}</h3>

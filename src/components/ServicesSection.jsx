@@ -33,7 +33,7 @@ const ServicePanel = ({ service, onClose }) => {
             <i className="ri-close-line text-xl" />
           </button>
           <div className="relative">
-            <span className="w-12 h-12 rounded-xl bg-brand flex items-center justify-center mb-4">
+            <span className="w-12 h-12 rounded-xl bg-brand-gradient flex items-center justify-center mb-4">
               <i className={`${service.icon} text-2xl text-white`} />
             </span>
             <h3 className="!text-white text-2xl font-bold mb-1">{service.title}</h3>
@@ -50,7 +50,7 @@ const ServicePanel = ({ service, onClose }) => {
                 <div className="flex-1 min-w-0">
                   <p className="text-ink text-[14px] font-semibold leading-snug">
                     {sub.name}
-                    {sub.popular && <span className="ml-2 align-middle text-[10px] font-bold uppercase tracking-wider bg-sun/20 text-[#9a6b00] px-2 py-0.5 rounded-full">Popular</span>}
+                    {sub.popular && <span className="ml-2 align-middle text-[10px] font-bold uppercase tracking-wider bg-sun/20 text-brand-dark px-2 py-0.5 rounded-full">Popular</span>}
                   </p>
                   <p className="text-brand text-[12px] font-bold mt-0.5">{sub.price}</p>
                 </div>
@@ -88,7 +88,7 @@ const ServiceCard = ({ service, onOpen }) => (
           <i className={`${service.icon} text-2xl text-brand group-hover:text-white transition-colors duration-300`} />
         </span>
         {service.badge && (
-          <span className="hidden sm:inline text-[10px] font-bold uppercase tracking-wider bg-sun/20 text-[#9a6b00] group-hover:bg-sun group-hover:text-ink px-2.5 py-1 rounded-full transition-colors">
+          <span className="hidden sm:inline text-[10px] font-bold uppercase tracking-wider bg-sun/20 text-brand-dark group-hover:bg-sun group-hover:text-ink px-2.5 py-1 rounded-full transition-colors">
             {service.badge}
           </span>
         )}
@@ -184,7 +184,7 @@ const ServicesSection = () => {
           {/* Closing card — spans the leftover columns so the grid ends on a full row */}
           <div className="reveal sm:col-span-1 lg:col-span-2 xl:col-span-3 rounded-2xl bg-ink relative overflow-hidden p-7 md:p-9 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div className="absolute inset-0 hub-pattern" />
-            <div className="absolute -right-20 -bottom-24 w-72 h-72 rounded-full bg-brand/30 blur-3xl" />
+            <div className="absolute -right-20 -bottom-24 w-72 h-72 rounded-full bg-violet/40 blur-3xl" />
             <div className="relative">
               <p className="text-sun text-[12px] font-bold uppercase tracking-widest mb-2">Can’t find what you need?</p>
               <h3 className="!text-white text-2xl md:text-[28px] font-bold leading-snug max-w-lg">Tell us your requirement — we’ll guide you to the right solution.</h3>

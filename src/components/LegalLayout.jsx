@@ -18,7 +18,7 @@ const LegalLayout = ({ title, highlight, path, description, updated, sections })
         <div className="space-y-10">
           {sections.map((s, i) => (
             <div key={s.title}>
-              <h2 className="text-xl md:text-2xl font-bold mb-4 flex items-baseline gap-3">
+              <h2 className="not-italic text-xl md:text-2xl font-bold mb-4 flex items-baseline gap-3">
                 <span className="text-brand text-base font-bold">{String(i + 1).padStart(2, '0')}</span>
                 {s.title}
               </h2>

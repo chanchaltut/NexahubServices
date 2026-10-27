@@ -60,7 +60,7 @@ const TestimonialsSection = () => {
                 <Stars count={t.rating} className="text-sun mb-5" />
                 <p className="text-ink/80 text-[15.5px] leading-relaxed mb-7 flex-1">“{t.text}”</p>
                 <div className="flex items-center gap-3 pt-5 border-t border-gray-200">
-                  <span className="w-11 h-11 rounded-full bg-brand text-white flex items-center justify-center font-bold text-lg">{t.name[0]}</span>
+                  <span className="w-11 h-11 rounded-full bg-brand-gradient text-white flex items-center justify-center font-bold text-lg">{t.name[0]}</span>
                   <div>
                     <p className="text-ink font-bold text-[15px]">{t.name}</p>
                     <p className="text-gray-500 text-[13px]">{t.role} · {t.city}</p>

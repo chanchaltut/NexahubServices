@@ -330,7 +330,7 @@ const Insights = () => {
                         <span className="flex items-center gap-1"><i className="ri-calendar-line" /> {article.date}</span>
                         <span className="flex items-center gap-1"><i className="ri-time-line" /> {article.readTime}</span>
                       </div>
-                      <h2 className={`font-bold text-lg sm:text-xl leading-snug mb-2 transition-colors ${isExpanded ? 'text-brand' : ''}`}>{article.title}</h2>
+                      <h2 className={`not-italic font-bold text-lg sm:text-xl leading-snug mb-2 transition-colors ${isExpanded ? 'text-brand' : ''}`}>{article.title}</h2>
                       <p className="text-gray-500 text-[14.5px] leading-relaxed line-clamp-2 mb-4">{article.excerpt}</p>
                       <span className="inline-flex items-center gap-1.5 font-semibold text-[14px] text-ink">
                         {isExpanded ? <>Read less <i className="ri-arrow-up-s-line" /></> : <>Read full article <span className="tracking-tighter">&gt;&gt;</span></>}
