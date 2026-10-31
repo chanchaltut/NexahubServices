@@ -99,7 +99,6 @@ export const SERVICES = [
       { "id": 3, "q": "Is there any government fee for GST registration?", "a": "No. GST registration on the government portal is free; you pay only our professional fee." },
       { "id": 4, "q": "What happens if I file GST returns late?", "a": "A late fee of ₹50 per day (₹20 for nil returns) applies, subject to caps, plus 18% annual interest on tax due. Continued non-filing can lead to cancellation of the GSTIN." }
     ],
-    "startingPrice": "₹499",
     "timeline": "3-7 working days",
     "whatsappMsg": "Hi! I need GST Services from Nexa Hub Services.",
     "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80&auto=format&fit=crop"
@@ -446,7 +445,7 @@ export const PARENT_SERVICES = [
     shortTitle: 'GST',
     emoji: '🧾',
     icon: 'ri-receipt-line',
-    startingPrice: '₹499',
+    startingPrice: '₹999',
     badge: 'Most Popular',
     isPopular: true,
     category: 'GST',
