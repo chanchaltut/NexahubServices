@@ -1,4 +1,4 @@
-# Nexa Hub Services — nexahubservices.in
+# Nexa Hub Services — www.nexahubservices.in
 
 Marketing website for **Nexa Hub Services** (React + Vite + Tailwind CSS).
 

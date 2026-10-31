@@ -28,8 +28,8 @@ export const BRAND = {
   state: 'Gujarat',
   timings: 'Quick response, 7 days a week',
   mapLink: 'https://www.google.com/maps/place/Ahmedabad,+Gujarat', // ← replace with the office's Google Maps link
-  domain: 'nexahubservices.in',
-  website: 'https://nexahubservices.in',
+  domain: 'www.nexahubservices.in',
+  website: 'https://www.nexahubservices.in',
   // Social profiles — icons only appear for links that are filled in
   social: {
     facebook:  '',

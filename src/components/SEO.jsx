@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { BRAND } from '../utils/constants';
 
-const DEFAULT_IMAGE = `${BRAND.website}/og-image.jpg`;
+const DEFAULT_IMAGE = `${BRAND.website}/og-image.jpg?v=2`;
 
 /**
  * Per-page SEO: title, description, canonical, Open Graph, Twitter and
@@ -14,7 +14,7 @@ const SEO = ({
   path = '/',
   keywords,
   image = DEFAULT_IMAGE,
-  imageAlt = `${BRAND.name} — ${BRAND.tagline}`,
+  imageAlt = `${BRAND.name}, ${BRAND.city} — ${BRAND.tagline}. Call / WhatsApp ${BRAND.phone} · ${BRAND.domain}`,
   type = 'website',
   noindex = false,
   jsonLd = [],
@@ -37,6 +37,7 @@ const SEO = ({
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
       <meta property="og:image:secure_url" content={image} />
+      <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={imageAlt} />

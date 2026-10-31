@@ -1,4 +1,4 @@
-# robots.txt — nexahubservices.in
+# robots.txt — www.nexahubservices.in
 User-agent: *
 Allow: /
 Disallow: /api/
@@ -29,4 +29,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://nexahubservices.in/sitemap.xml
+Sitemap: https://www.nexahubservices.in/sitemap.xml

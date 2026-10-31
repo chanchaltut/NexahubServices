@@ -33,8 +33,6 @@ const ServicePage = () => {
         description={`${service.shortDesc} Expert support by ${BRAND.name}, Ahmedabad — 100% online across India${service.startingPrice ? `, starting ${service.startingPrice}` : ''}.`}
         keywords={`${service.title}, ${service.shortTitle} Ahmedabad, ${service.shortTitle} Gujarat, ${service.services.join(', ')}, ${BRAND.name}`}
         path={path}
-        image={imageAt(service.image, 1200)}
-        imageAlt={service.title}
         jsonLd={[
           serviceSchema(service),
           breadcrumbSchema([{ name: 'Services', path: '/#services' }, { name: service.title, path }]),
