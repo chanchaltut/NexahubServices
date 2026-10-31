@@ -45,7 +45,7 @@ const Hero = () => (
           ))}
         </div>
         <div>
-          <p className="text-white font-bold text-[15px] leading-tight">{STATS[0].number}{STATS[0].suffix} businesses</p>
+          <p className="text-white font-bold text-[15px] leading-tight">{STATS[0].number.toLocaleString('en-IN')}{STATS[0].suffix} businesses</p>
           <p className="text-white/75 text-[12px]">trust Nexa Hub to grow</p>
         </div>
       </div>

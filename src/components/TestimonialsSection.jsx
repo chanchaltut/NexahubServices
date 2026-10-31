@@ -47,7 +47,7 @@ const TestimonialsSection = () => {
             <div className="absolute inset-0 hub-pattern" />
             <div className="relative">
               <Stars className="text-sun text-lg mb-4" />
-              <p className="text-[56px] font-bold leading-none">{STATS[0].number}{STATS[0].suffix}</p>
+              <p className="text-[56px] font-bold leading-none">{STATS[0].number.toLocaleString('en-IN')}{STATS[0].suffix}</p>
               <p className="text-white/70 mt-2">happy clients across India</p>
             </div>
             <p className="relative text-white/50 text-[13px] mt-8">Real people. Real businesses. Zero missed deadlines.</p>

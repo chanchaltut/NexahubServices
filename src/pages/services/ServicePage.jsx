@@ -30,7 +30,7 @@ const ServicePage = () => {
     <React.Fragment key={slug}>
       <SEO
         title={`${service.title} | ${BRAND.name}`}
-        description={`${service.shortDesc} Expert support by ${BRAND.name}, Ahmedabad — 100% online across India, starting ${service.startingPrice}.`}
+        description={`${service.shortDesc} Expert support by ${BRAND.name}, Ahmedabad — 100% online across India${service.startingPrice ? `, starting ${service.startingPrice}` : ''}.`}
         keywords={`${service.title}, ${service.shortTitle} Ahmedabad, ${service.shortTitle} Gujarat, ${service.services.join(', ')}, ${BRAND.name}`}
         path={path}
         image={imageAt(service.image, 1200)}
@@ -54,7 +54,7 @@ const ServicePage = () => {
             { label: 'Starting from', value: service.startingPrice },
             { label: 'Timeline', value: service.timeline },
             { label: 'Mode', value: '100% Online' },
-          ].map((s) => (
+          ].filter((s) => s.value).map((s) => (
             <div key={s.label} className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl px-5 py-3">
               <p className="text-white/60 text-[11px] font-bold uppercase tracking-widest">{s.label}</p>
               <p className="text-white font-bold text-[16px]">{s.value}</p>

@@ -1,4 +1,12 @@
 {
+  "redirects": [
+    { "source": "/services/income-tax", "destination": "/", "permanent": true },
+    { "source": "/services/tds-compliance", "destination": "/", "permanent": true },
+    { "source": "/services/roc-compliance", "destination": "/", "permanent": true },
+    { "source": "/services/tax-audit", "destination": "/", "permanent": true },
+    { "source": "/services/certificates", "destination": "/", "permanent": true },
+    { "source": "/services/fno-capital-gain", "destination": "/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]

@@ -25,7 +25,7 @@ export const faqSchema = (faqs) => ({
 });
 
 export const serviceSchema = (service) => {
-  const price = service.startingPrice.replace(/[^0-9]/g, '');
+  const price = (service.startingPrice || '').replace(/[^0-9]/g, '');
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',

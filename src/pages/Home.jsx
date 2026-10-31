@@ -20,8 +20,8 @@ const Home = () => (
   <>
     <SEO
       title="Nexa Hub Services Ahmedabad | GST, PMEGP Loan, Startup India, Trademark & MSME Registration"
-      description="Nexa Hub Services, Ahmedabad empowers startups & MSMEs with business registration from A to Z — GST, PMEGP loans with up to 35% subsidy, Startup India (DPIIT), trademark, MSME Udyam, FSSAI, IEC, income tax and compliance. Quick response, 100% online across India."
-      keywords="Nexa Hub Services, NexaHub, Nexa Hub Ahmedabad, Yogi Surendra Nath, PMEGP loan Ahmedabad, PMEGP loan consultant Gujarat, Startup India registration, DPIIT recognition, trademark registration Ahmedabad, MSME Udyam registration, FSSAI licence Ahmedabad, IEC registration, GST registration Ahmedabad, GST registration online, GST return filing, ITR filing online, income tax return filing, company registration India, private limited company registration, LLP registration, TDS return filing, ROC compliance, MSME Udyam registration, trademark registration, accounting and bookkeeping services, tax consultant near me, business compliance services India"
+      description="Nexa Hub Services, Ahmedabad empowers startups & MSMEs with business registration, government funding and compliance support — GST, PMEGP loans with up to 35% subsidy, Startup India (DPIIT), trademark, MSME Udyam, FSSAI and IEC. Quick response, 100% online across India."
+      keywords="Nexa Hub Services, NexaHub, Nexa Hub Ahmedabad, Yogi Surendra Nath, PMEGP loan Ahmedabad, PMEGP loan consultant Gujarat, Startup India registration, DPIIT recognition, trademark registration Ahmedabad, MSME Udyam registration, FSSAI licence Ahmedabad, IEC registration, GST registration Ahmedabad, GST registration online, GST return filing, company registration India, private limited company registration, LLP registration, Mudra loan, CGTMSE loan, project report for bank loan, business registration consultant near me"
       path="/"
       jsonLd={[faqSchema(FAQS)]}
     />

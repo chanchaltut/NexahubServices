@@ -5,9 +5,27 @@ import useReveal from '../hooks/useReveal';
 
 // Flat index of every category + sub-service for the search box
 const SEARCH_INDEX = PARENT_SERVICES.flatMap((parent) => [
-  { name: parent.title, parentTitle: parent.title, price: `Starting from ${parent.startingPrice}`, parent },
+  { name: parent.title, parentTitle: parent.title, price: parent.startingPrice && `Starting from ${parent.startingPrice}`, parent },
   ...parent.subcategories.map((sub) => ({ name: sub.name, parentTitle: parent.title, price: sub.price, parent })),
 ]);
+
+const SUB_SERVICE_COUNT = PARENT_SERVICES.reduce((n, p) => n + p.subcategories.length, 0);
+
+// Closing card fills the columns left over after the last row of category cards.
+// Class names are spelled out in full so Tailwind can detect them.
+const leftover = (cols) => cols - (PARENT_SERVICES.length % cols);
+const SPAN = {
+  sm: ['', 'sm:col-span-1', 'sm:col-span-2'],
+  lg: ['', 'lg:col-span-1', 'lg:col-span-2', 'lg:col-span-3'],
+  xl: ['', 'xl:col-span-1', 'xl:col-span-2', 'xl:col-span-3', 'xl:col-span-4'],
+};
+const CLOSING_SPAN = [
+  SPAN.sm[leftover(2)],
+  SPAN.lg[leftover(3)],
+  leftover(3) === 1 ? 'lg:flex-col lg:items-start' : 'lg:flex-row lg:items-center',
+  SPAN.xl[leftover(4)],
+  leftover(4) === 1 ? 'xl:flex-col xl:items-start' : 'xl:flex-row xl:items-center',
+].join(' ');
 
 const enquiryMsg = (name) => `Hi! I need "${name}" from ${BRAND.name}. Please guide me.`;
 
@@ -42,7 +60,9 @@ const ServicePanel = ({ service, onClose }) => {
         </div>
 
         <div className="flex-1 overflow-y-auto thin-scroll p-5 sm:p-6">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Services & professional fees</p>
+          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">
+            {service.subcategories.some((sub) => sub.price) ? 'Services & professional fees' : 'Services — fees on consultation'}
+          </p>
           <ul className="space-y-2.5">
             {service.subcategories.map((sub) => (
               <li key={sub.name} className="flex items-center gap-3 border border-gray-100 hover:border-brand/40 rounded-xl px-4 py-3 transition-colors">
@@ -52,7 +72,7 @@ const ServicePanel = ({ service, onClose }) => {
                     {sub.name}
                     {sub.popular && <span className="ml-2 align-middle text-[10px] font-bold uppercase tracking-wider bg-sun/20 text-brand-dark px-2 py-0.5 rounded-full">Popular</span>}
                   </p>
-                  <p className="text-brand text-[12px] font-bold mt-0.5">{sub.price}</p>
+                  {sub.price && <p className="text-brand text-[12px] font-bold mt-0.5">{sub.price}</p>}
                 </div>
                 <a href={waLink(enquiryMsg(sub.name))} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-9 h-9 rounded-full bg-[#25d366]/10 text-[#1da851] hover:bg-[#25d366] hover:text-white flex items-center justify-center transition-colors" aria-label={`Enquire about ${sub.name} on WhatsApp`}>
                   <i className="ri-whatsapp-line text-lg" />
@@ -93,9 +113,11 @@ const ServiceCard = ({ service, onOpen }) => (
           </span>
         )}
       </div>
-      <div className="min-w-0 flex-1 sm:flex-none">
+      <div className="min-w-0 flex-1 sm:flex-none sm:mb-5">
         <h3 className="text-[16px] sm:text-xl font-semibold !text-ink group-hover:!text-white transition-colors duration-300 sm:mb-2 leading-snug">{service.title}</h3>
-        <p className="text-brand group-hover:text-sun text-[13px] font-bold sm:mb-5 transition-colors">From {service.startingPrice}</p>
+        {service.startingPrice && (
+          <p className="text-brand group-hover:text-sun text-[13px] font-bold transition-colors">From {service.startingPrice}</p>
+        )}
       </div>
       <i className="ri-arrow-right-s-line text-2xl text-ink/40 sm:hidden" />
       <div className="hidden sm:block w-full h-px bg-ink/10 group-hover:bg-white/20 transition-colors duration-300 mb-5" />
@@ -131,7 +153,7 @@ const ServicesSection = () => {
           <div className="eyebrow mb-6">Our Services</div>
           <h2 className="section-title mb-4">Everything Your Business Needs, Under One Roof</h2>
           <p className="text-gray-600 text-[16px] md:text-[17px] leading-relaxed">
-            {PARENT_SERVICES.length} service categories, 100+ individual services — registrations, funding, filings and advisory, all handled by one team.
+            {PARENT_SERVICES.length} service categories, {SUB_SERVICE_COUNT}+ individual services — registrations, funding, filings and advisory, all handled by one team.
           </p>
         </div>
 
@@ -142,7 +164,7 @@ const ServicesSection = () => {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search a service — GST, ITR, trademark, PF…"
+            placeholder="Search a service — GST, PMEGP, trademark, FSSAI…"
             className="w-full bg-white border border-gray-200 focus:border-brand focus:ring-4 focus:ring-brand/10 rounded-full pl-12 pr-5 py-4 text-ink text-[15px] placeholder-gray-400 outline-none transition-all shadow-sm"
             aria-label="Search services"
           />
@@ -157,14 +179,14 @@ const ServicesSection = () => {
                           <span className="block text-ink text-[14px] font-semibold leading-snug">{r.name}</span>
                           <span className="block text-gray-400 text-[12px]">{r.parentTitle}</span>
                         </span>
-                        <span className="text-brand text-[12px] font-bold whitespace-nowrap">{r.price.replace('Starting from ', 'From ')}</span>
+                        {r.price && <span className="text-brand text-[12px] font-bold whitespace-nowrap">{r.price.replace('Starting from ', 'From ')}</span>}
                       </button>
                     </li>
                   ))}
                 </ul>
               ) : (
                 <div className="px-5 py-6 text-center">
-                  <p className="text-gray-500 text-sm mb-3">No match for “{query}” — we probably still do it.</p>
+                  <p className="text-gray-500 text-sm mb-3">No match for “{query}” — ask us and we’ll tell you honestly if we can help.</p>
                   <a href={waLink(`Hi! I'm looking for "${query}". Can ${BRAND.name} help?`)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 bg-[#25d366] text-white px-4 py-2 rounded-full font-bold text-xs">
                     <i className="ri-whatsapp-line" /> Ask on WhatsApp
                   </a>
@@ -182,7 +204,7 @@ const ServicesSection = () => {
           ))}
 
           {/* Closing card — spans the leftover columns so the grid ends on a full row */}
-          <div className="reveal sm:col-span-1 lg:col-span-2 xl:col-span-3 rounded-2xl bg-ink relative overflow-hidden p-7 md:p-9 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className={`reveal ${CLOSING_SPAN} rounded-2xl bg-ink relative overflow-hidden p-7 md:p-9 flex flex-col md:flex-row md:items-center justify-between gap-6`}>
             <div className="absolute inset-0 hub-pattern" />
             <div className="absolute -right-20 -bottom-24 w-72 h-72 rounded-full bg-violet/40 blur-3xl" />
             <div className="relative">

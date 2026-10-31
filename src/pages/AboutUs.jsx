@@ -19,9 +19,9 @@ const values = [
 const AboutUs = () => (
   <>
     <SEO
-      title="About Us | Nexa Hub Services — Tax, Compliance & Business Registration Experts"
-      description="Nexa Hub Services, founded by Yogi Surendra Nath in Ahmedabad, empowers startups & MSMEs with strategic advisory, government funding, compliance and business registration from A to Z."
-      keywords="about Nexa Hub Services, tax consultants India, business compliance firm, online tax filing company, company registration experts"
+      title="About Us | Nexa Hub Services — Business Registration, Funding & Compliance Support"
+      description="Nexa Hub Services, founded by Yogi Surendra Nath in Ahmedabad, empowers startups & MSMEs with strategic advisory, government funding, business registration and compliance support."
+      keywords="about Nexa Hub Services, Yogi Surendra Nath, business registration consultant Ahmedabad, PMEGP loan consultant, startup funding support, company registration services"
       path="/about"
       jsonLd={[breadcrumbSchema([{ name: 'About Us', path: '/about' }])]}
     />
@@ -30,7 +30,7 @@ const AboutUs = () => (
       eyebrow="About Us"
       title="Empowering Startups"
       highlight="& MSMEs"
-      description={`${BRAND.name} brings registrations, tax filings and ongoing compliance under one roof — so you can focus on building your business.`}
+      description={`${BRAND.name} brings registrations, government funding support and ongoing compliance under one roof — so you can focus on building your business.`}
       crumbs={[{ name: 'About Us' }]}
     />
 
@@ -56,7 +56,7 @@ const AboutUs = () => (
     <section className="py-16 bg-slate-50" aria-label="Who we serve">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <div className="eyebrow mb-6">Who We Serve</div>
-        <h2 className="section-title mb-10">Built for Every Kind of Taxpayer</h2>
+        <h2 className="section-title mb-10">Built for Every Kind of Business</h2>
         <div className="flex flex-wrap justify-center gap-3">
           {ABOUT.clientCategories.map((c) => (
             <span key={c} className="bg-white border border-gray-200 rounded-full px-5 py-2.5 text-[14px] font-semibold text-ink">{c}</span>

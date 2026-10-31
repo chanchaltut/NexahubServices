@@ -51,8 +51,8 @@ const AboutSection = ({ showCta = true }) => {
               <div className="absolute inset-0 bg-gradient-to-t from-ink/50 to-transparent" />
               <div className="absolute bottom-5 right-5 md:bottom-8 md:right-8 w-[210px] md:w-[240px] bg-ink/20 backdrop-blur-md border border-white/15 px-7 py-6 rounded-[1.25rem] text-white shadow-2xl">
                 <p className="text-white/90 text-[14px] font-semibold mb-1">More than</p>
-                <p className="text-[52px] md:text-[60px] font-bold leading-none tracking-tight mb-2">{STATS[1].number.toLocaleString('en-IN')}{STATS[1].suffix}</p>
-                <p className="text-white/90 text-[14px] font-medium leading-snug">Registrations & Filings</p>
+                <p className="text-[52px] md:text-[60px] font-bold leading-none tracking-tight mb-2">{STATS[3].number.toLocaleString('en-IN')}{STATS[3].suffix}</p>
+                <p className="text-white/90 text-[14px] font-medium leading-snug">Certificates Delivered</p>
               </div>
             </div>
             <div className="absolute -top-5 -left-3 md:-left-6 bg-sun text-ink rounded-2xl px-5 py-4 shadow-xl rotate-[-4deg]">

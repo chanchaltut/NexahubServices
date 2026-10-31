@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter, FaWhatsapp } from 'react-icons/fa6';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 import Logo from './Logo';
-import { BRAND, DEVELOPER, waLink } from '../utils/constants';
+import { BRAND, DEVELOPER } from '../utils/constants';
 
 const popularServices = [
   { name: 'PMEGP Loan Scheme', href: '/services/pmegp-loan' },
@@ -22,7 +22,7 @@ const companyLinks = [
 ];
 
 const usefulLinks = [
-  { name: 'Income Tax Filing', href: '/services/income-tax' },
+  { name: 'Loan Documentation', href: '/services/loan-documentation' },
   { name: 'Company Registration', href: '/services/business-registration' },
   { name: 'Project Reports & CMA', href: '/services/project-reports' },
   { name: 'Privacy Policy', href: '/privacy-policy' },
@@ -34,7 +34,6 @@ const socials = [
   { icon: FaInstagram, href: BRAND.social.instagram, label: 'Instagram' },
   { icon: FaLinkedinIn, href: BRAND.social.linkedin, label: 'LinkedIn' },
   { icon: FaXTwitter, href: BRAND.social.twitter, label: 'X (Twitter)' },
-  { icon: FaWhatsapp, href: waLink(), label: 'WhatsApp' },
 ].filter((s) => s.href);
 
 const LinkColumn = ({ title, links }) => (
@@ -76,7 +75,7 @@ const Footer = () => {
               <Logo variant="light" className="h-12" />
             </Link>
             <p className="text-white/70 text-[14px] leading-[1.8] mb-6 max-w-sm">
-              Empowering startups & MSMEs with strategic advisory, funding, compliance and business registration from A to Z.
+              Empowering startups & MSMEs with strategic advisory, government funding support, business registration and compliance.
             </p>
             <ul className="space-y-3 mb-8 text-[14px] text-white/70">
               <li className="flex gap-3"><i className="ri-map-pin-line text-sun" /><span>{BRAND.address}</span></li>

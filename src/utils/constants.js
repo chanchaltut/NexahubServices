@@ -16,9 +16,9 @@ export const BRAND = {
   legalName: 'Nexa Hub Services',
   founder: 'Yogi Surendra Nath',
   tagline: 'Empowering Startups & MSMEs',
-  subTagline: 'Strategic advisory, funding, compliance and digital transformation — business registration from A to Z.',
+  subTagline: 'Strategic advisory, government funding, business registration and compliance support for startups and MSMEs.',
   description:
-    'Nexa Hub Services empowers startups and MSMEs with strategic advisory, government funding, compliance and business registration from A to Z — GST, PMEGP loans, Startup India, trademark, MSME, FSSAI, IEC, income tax and more. Based in Ahmedabad, serving clients across India.',
+    'Nexa Hub Services empowers startups and MSMEs with strategic advisory, government funding support, business registration and compliance — GST, PMEGP loans, Startup India (DPIIT), trademark, MSME Udyam, FSSAI, IEC and company registration. Based in Ahmedabad, serving clients across India.',
   phone: '+91 98750 37579',
   phoneLink: `tel:+${PHONE_DIGITS}`,
   whatsapp: PHONE_DIGITS,
@@ -51,43 +51,15 @@ export const waLink = (message = `Hi! I'd like to know more about ${BRAND.name}.
   `https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(message)}`
 
 // ─── STATS (animated counters) ──────────────────────────────
-// ← confirm these figures with the client
 export const STATS = [
-  { number: 500,  suffix: '+', label: 'Businesses Served' },
-  { number: 1200, suffix: '+', label: 'Filings Completed' },
-  { number: 12,   suffix: '',  label: 'Service Categories' },
-  { number: 100,  suffix: '%', label: 'Online Process' },
+  { number: 1250,             suffix: '+',    label: 'Clients' },
+  { number: 25,  prefix: '₹', suffix: ' Cr+', label: 'Funds Raised' },
+  { number: 5,   prefix: '₹', suffix: ' Cr+', label: 'Grants' },
+  { number: 2150,             suffix: '+',    label: 'Certificates' },
 ]
 
-// ─── SERVICES (10 professional services) ───────────────────────────────
+// ─── SERVICES (service detail pages) ───────────────────────────────
 export const SERVICES = [
-  {
-    "id": 1,
-    "slug": "income-tax",
-    "title": "Income Tax Return Filing & Tax Planning",
-    "shortTitle": "Income Tax & Planning",
-    "icon": "fa-file-invoice-dollar",
-    "iconEmoji": "💰",
-    "category": "Tax Filing",
-    "isPopular": true,
-    "badge": "Most Popular",
-    "shortDesc": "ITR filing for individuals, businesses & professionals with maximum tax savings.",
-    "overview": "File your income tax return accurately and on time with Nexa Hub Services. We handle ITR-1 through ITR-7, reconcile your AIS/26AS, maximise deductions under 80C, 80D, HRA, and provide expert tax planning strategies.",
-    "services": [
-      "ITR Filing for Salaried & Business",
-      "Old Pending ITR Filing",
-      "Capital Gains & Crypto Tax",
-      "NRI Return Filing",
-      "Income Tax Notice, Assessment & Proceeding",
-      "Tax Planning on Refund & Tax Saving",
-      "AIS/26AS Reconciliation",
-      "Advance Tax Computation"
-    ],
-    "startingPrice": "₹499",
-    "timeline": "1-3 working days",
-    "whatsappMsg": "Hi! I need Income Tax Filing assistance from Nexa Hub Services.",
-    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=700&q=80&auto=format&fit=crop"
-  },
   {
     "id": 2,
     "slug": "gst-services",
@@ -98,15 +70,14 @@ export const SERVICES = [
     "category": "Tax Filing",
     "isPopular": true,
     "badge": "Most Popular",
-    "shortDesc": "Complete GST compliance — registration to annual returns, notices & audit.",
+    "shortDesc": "Complete GST compliance — registration to annual returns, amendments & notices.",
     "overview": "Nexa Hub Services provides end-to-end GST services. From obtaining your GSTIN to filing monthly, quarterly, and annual returns, we handle everything efficiently ensuring you claim maximum ITC and stay penalty-free.",
     "services": [
       "New GST Registration",
       "GSTR-1 & GSTR-3B Filing",
       "GSTR-9 Annual Return",
       "GST Reconciliation (GSTR-2A/2B)",
-      "GST Audit",
-      "LUT Application",
+      "GST Amendment & Cancellation",
       "GST Notice Reply"
     ],
     "highlights": [
@@ -134,56 +105,6 @@ export const SERVICES = [
     "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80&auto=format&fit=crop"
   },
   {
-    "id": 3,
-    "slug": "tax-audit",
-    "title": "Tax Audit & Statutory Audit",
-    "shortTitle": "Tax Audit",
-    "icon": "fa-file-signature",
-    "iconEmoji": "📝",
-    "category": "Compliance",
-    "isPopular": false,
-    "badge": "",
-    "shortDesc": "Comprehensive Tax & Statutory Audit services for businesses and corporations.",
-    "overview": "Ensure full regulatory compliance with our audit services. Nexa Hub Services conducts Tax Audits u/s 44AB and Statutory Audits to verify your financial statements are accurate and comply with the latest tax laws.",
-    "services": [
-      "Tax Audit u/s 44AB",
-      "Statutory Audit of Companies",
-      "NGO, Trust & Society Audit",
-      "ADT-1 — Auditor Appointment",
-      "Form 3CA/3CB & 3CD",
-      "Internal Audit",
-      "Audit Report Preparation"
-    ],
-    "startingPrice": "Consult for Pricing",
-    "timeline": "Case-specific",
-    "whatsappMsg": "Hi! I need Tax Audit services from Nexa Hub Services.",
-    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&auto=format&fit=crop"
-  },
-  {
-    "id": 4,
-    "slug": "tds-compliance",
-    "title": "TDS Return & Compliance",
-    "shortTitle": "TDS Compliance",
-    "icon": "fa-percent",
-    "iconEmoji": "📊",
-    "category": "Tax Filing",
-    "isPopular": false,
-    "badge": "",
-    "shortDesc": "Quarterly TDS/TCS return filing, deduction computation & Form 16 issuance.",
-    "overview": "We manage your complete TDS compliance. Nexa Hub Services handles TDS computation, quarterly return filing (24Q, 26Q, 27EQ), default resolution, and issues Form 16/16A to employees and vendors.",
-    "services": [
-      "TDS Computation & Challan",
-      "24Q, 26Q, 27EQ Filing",
-      "Form 16/16A Generation",
-      "TAN Registration",
-      "TDS Notice Resolution"
-    ],
-    "startingPrice": "₹1,499",
-    "timeline": "2-5 working days",
-    "whatsappMsg": "Hi! I need TDS compliance services from Nexa Hub Services.",
-    "image": "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=700&q=80&auto=format&fit=crop"
-  },
-  {
     "id": 5,
     "slug": "business-registration",
     "title": "Business Registration & Setup",
@@ -205,36 +126,9 @@ export const SERVICES = [
       "NGO / Trust / Society Registration",
       "MSME / Udyam Registration"
     ],
-    "startingPrice": "₹4,999",
     "timeline": "7-15 working days",
     "whatsappMsg": "Hi! I want to register a business with Nexa Hub Services.",
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80&auto=format&fit=crop"
-  },
-  {
-    "id": 6,
-    "slug": "roc-compliance",
-    "title": "ROC / Corporate Compliance",
-    "shortTitle": "ROC Compliance",
-    "icon": "fa-landmark",
-    "iconEmoji": "🏛️",
-    "category": "Compliance",
-    "isPopular": false,
-    "badge": "",
-    "shortDesc": "Annual filings, board resolutions, minutes & all MCA/ROC compliance for companies.",
-    "overview": "Keep your company fully compliant with MCA regulations. Nexa Hub Services handles all your ROC filings, annual returns (AOC-4, MGT-7), board meeting minutes, and statutory registers to keep you penalty-free.",
-    "services": [
-      "Annual Return (MGT-7)",
-      "Financial Statements (AOC-4)",
-      "Board Meeting Minutes & Resolutions",
-      "Director Appointment / Resignation",
-      "Share Transfer & Allotment",
-      "Charge Creation / Satisfaction",
-      "Statutory Register Maintenance"
-    ],
-    "startingPrice": "₹3,999",
-    "timeline": "5-10 working days",
-    "whatsappMsg": "Hi! I need ROC/Corporate compliance from Nexa Hub Services.",
-    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=700&q=80&auto=format&fit=crop"
   },
   {
     "id": 7,
@@ -256,36 +150,9 @@ export const SERVICES = [
       "Feasibility Studies",
       "Business Plan Preparation"
     ],
-    "startingPrice": "₹2,999",
     "timeline": "3-5 working days",
     "whatsappMsg": "Hi! I need a Project Report / CMA Data from Nexa Hub Services.",
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80&auto=format&fit=crop"
-  },
-  {
-    "id": 8,
-    "slug": "certificates",
-    "title": "Certificates & Attestations",
-    "shortTitle": "Certificates",
-    "icon": "fa-certificate",
-    "iconEmoji": "🏅",
-    "category": "Certificates",
-    "isPopular": false,
-    "badge": "",
-    "shortDesc": "Turnover, net worth, solvency, export and other certificates for banks, tenders and visas.",
-    "overview": "Nexa Hub Services arranges all types of professional certificates required for bank loans, tenders, visa applications and government schemes — prepared accurately and delivered fast.",
-    "services": [
-      "Turnover / Revenue Certificate",
-      "Net Worth Certificate",
-      "Export / Import Turnover Certificate",
-      "Solvency Certificate",
-      "Capital / Fund Utilisation Certificate",
-      "15CA / 15CB Certificate",
-      "Form 15G / 15H"
-    ],
-    "startingPrice": "₹1,499",
-    "timeline": "1-2 working days",
-    "whatsappMsg": "Hi! I need a certificate / attestation from Nexa Hub Services.",
-    "image": "https://images.unsplash.com/photo-1568219557405-376e23e4f7cf?w=700&q=80&auto=format&fit=crop"
   },
   {
     "id": 9,
@@ -298,44 +165,17 @@ export const SERVICES = [
     "isPopular": false,
     "badge": "",
     "shortDesc": "Complete loan file preparation — home, business, MSME & personal loan documentation.",
-    "overview": "Nexa Hub Services assists with complete loan documentation — from ITR preparation to balance sheet compilation, bank statement analysis, and project report preparation — to help you secure the loan you need.",
+    "overview": "Nexa Hub Services assists with complete loan documentation — from document checklists and loan file preparation to project reports and bank follow-up — to help you apply for the loan you need with confidence.",
     "services": [
       "Home Loan Documentation",
       "Business Loan File Preparation",
       "MSME / Mudra Loan Documentation",
-      "Personal Loan ITR Support",
-      "Balance Sheet & P&L for Loans",
-      "Bank Statement Analysis & Certification"
+      "CGTMSE Collateral-Free Loan Assistance",
+      "Bank Liaison & Loan Follow-up"
     ],
-    "startingPrice": "₹1,999",
     "timeline": "2-4 working days",
     "whatsappMsg": "Hi! I need Loan Documentation assistance from Nexa Hub Services.",
     "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=700&q=80&auto=format&fit=crop"
-  },
-  {
-    "id": 10,
-    "slug": "fno-capital-gain",
-    "title": "F&O / Capital Gain Tax",
-    "shortTitle": "F&O & Capital Gain",
-    "icon": "fa-chart-line",
-    "iconEmoji": "📉",
-    "category": "Tax Filing",
-    "isPopular": false,
-    "badge": "",
-    "shortDesc": "Specialised ITR filing for F&O traders, equity investors & capital gain computation.",
-    "overview": "Nexa Hub Services handles complex ITR filings for F&O traders and investors — computing turnover, setting off losses, claiming expenses, and ensuring full tax compliance for stock market participants.",
-    "services": [
-      "F&O Turnover Computation",
-      "ITR-3 Filing for F&O Traders",
-      "Long-Term & Short-Term Capital Gains",
-      "Crypto / Virtual Digital Asset Tax",
-      "Loss Set-Off & Carry Forward",
-      "P&L from Broker Reports"
-    ],
-    "startingPrice": "₹2,499",
-    "timeline": "2-4 working days",
-    "whatsappMsg": "Hi! I need F&O / Capital Gain Tax filing from Nexa Hub Services.",
-    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&q=80&auto=format&fit=crop"
   },
   {
     "id": 11,
@@ -373,7 +213,6 @@ export const SERVICES = [
       { "id": 3, "q": "What is the maximum project cost under PMEGP?", "a": "Up to ₹50 lakh for manufacturing units and up to ₹20 lakh for service or business units. The balance after your contribution is provided as a bank loan." },
       { "id": 4, "q": "How long does PMEGP loan approval take?", "a": "Timelines depend on the implementing agency and bank, but most applications move from submission to sanction within a few weeks when the project report and documents are complete. We follow up with the agency and bank at every stage." }
     ],
-    "startingPrice": "₹2,499",
     "timeline": "Case-specific",
     "whatsappMsg": "Hi! I want to apply for a PMEGP loan. Please guide me.",
     "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=80&auto=format&fit=crop"
@@ -413,7 +252,6 @@ export const SERVICES = [
       { "id": 3, "q": "Is the 80-IAC tax exemption automatic after DPIIT recognition?", "a": "No. Recognition is the first step. Private limited companies and LLPs must then apply separately to the Inter-Ministerial Board for the Section 80-IAC tax holiday — we prepare and file that application too." },
       { "id": 4, "q": "Is there any government fee for DPIIT recognition?", "a": "No. The DPIIT application itself is free; you pay only our professional fee for preparation, filing and follow-up." }
     ],
-    "startingPrice": "₹2,999",
     "timeline": "7-15 working days",
     "whatsappMsg": "Hi! I want to get Startup India (DPIIT) recognition for my business.",
     "image": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700&q=80&auto=format&fit=crop"
@@ -471,8 +309,7 @@ export const SERVICES = [
       "IEC Modification / Update",
       "Annual IEC Update (April–June)",
       "AD Code Registration Guidance",
-      "RCMC Registration with Export Councils",
-      "GST LUT for Exporters"
+      "RCMC Registration with Export Councils"
     ],
     "highlights": [
       { "icon": "ri-earth-line", "title": "Go Global", "text": "Mandatory for import / export and to receive foreign payments for exports." },
@@ -576,9 +413,10 @@ export const SERVICES = [
   }
 ]
 
-// ─── PARENT SERVICE CATEGORIES (12 parent cards + subcategories & pricing) ──
+// ─── PARENT SERVICE CATEGORIES (parent cards + subcategories & pricing) ──
 // Used in the main Services page with expandable subcategory accordions.
 // Prices shown as "Starting from ₹XXX" — final quote depends on scope / complexity.
+// Categories without `startingPrice` / `price` are quoted on consultation.
 // Govt fees (if any) are charged at actuals, separately.
 export const PARENT_SERVICES = [
   {
@@ -586,7 +424,6 @@ export const PARENT_SERVICES = [
     title: 'Startup India & Govt. Funding',
     shortTitle: 'Startup & Funding',
     icon: 'ri-rocket-line',
-    startingPrice: '₹1,999',
     badge: 'Trending',
     isPopular: true,
     category: 'Startup & Funding',
@@ -594,13 +431,13 @@ export const PARENT_SERVICES = [
     shortDesc: 'PMEGP loans with up to 35% subsidy, Startup India (DPIIT) recognition, Mudra & CGTMSE — funding guidance end-to-end.',
     whatsappMsg: 'Hi! I need guidance on Startup India / government funding schemes.',
     subcategories: [
-      { name: 'PMEGP Loan — Application & Project Report', price: 'Starting from ₹2,499', popular: true },
-      { name: 'Startup India (DPIIT) Recognition', price: 'Starting from ₹2,999', popular: true },
-      { name: 'Section 80-IAC Tax Exemption Application', price: 'Starting from ₹4,999' },
-      { name: 'Mudra Loan Application Support', price: 'Starting from ₹1,999' },
-      { name: 'CGTMSE Collateral-Free Loan Assistance', price: 'Starting from ₹1,999' },
-      { name: 'Startup India Seed Fund Application', price: 'On Consultation' },
-      { name: 'Bank Loan Project Report & CMA Data', price: 'Starting from ₹2,999' },
+      { name: 'PMEGP Loan — Application & Project Report', popular: true },
+      { name: 'Startup India (DPIIT) Recognition', popular: true },
+      { name: 'Section 80-IAC Tax Exemption Application' },
+      { name: 'Mudra Loan Application Support' },
+      { name: 'CGTMSE Collateral-Free Loan Assistance' },
+      { name: 'Startup India Seed Fund Application' },
+      { name: 'Bank Loan Project Report & CMA Data' },
     ]
   },
   {
@@ -617,118 +454,15 @@ export const PARENT_SERVICES = [
     shortDesc: 'Complete GST compliance — new registration, return filing, amendments & notices handled by experts.',
     whatsappMsg: 'Hi! I need GST services from Nexa Hub Services. Please guide me.',
     subcategories: [
-      { name: 'New GST Registration', price: 'Starting from ₹499', popular: true },
+      { name: 'New GST Registration', price: 'On Consultation', popular: true },
       { name: 'GSTR-1 Monthly / Quarterly Filing', price: 'Starting from ₹499/month' },
       { name: 'GSTR-3B Return Filing', price: 'Starting from ₹499/month' },
       { name: 'GSTR-9 Annual Return', price: 'Starting from ₹1,999' },
       { name: 'GSTR-9C Reconciliation Statement', price: 'Starting from ₹3,499' },
       { name: 'GST Cancellation / Surrender', price: 'Starting from ₹999' },
       { name: 'GST Amendment (Core / Non-Core)', price: 'Starting from ₹699' },
-      { name: 'LUT Application (Export)', price: 'Starting from ₹999' },
       { name: 'GST Notice / Demand Reply', price: 'Starting from ₹1,999' },
       { name: 'GST Refund Application', price: 'Starting from ₹2,499' },
-    ]
-  },
-  {
-    id: 'itr',
-    title: 'Income Tax Return (ITR)',
-    shortTitle: 'ITR',
-    emoji: '💰',
-    icon: 'ri-file-chart-line',
-    startingPrice: '₹499',
-    badge: 'High Demand',
-    isPopular: true,
-    category: 'ITR',
-    page: 'income-tax',
-    shortDesc: 'Accurate ITR filing for salaried, business, professionals & NRIs with maximum deductions.',
-    whatsappMsg: 'Hi! I need ITR filing services from Nexa Hub Services.',
-    subcategories: [
-      { name: 'ITR-1 — Salaried / Pension', price: 'Starting from ₹499', popular: true },
-      { name: 'ITR-2 — Capital Gains / HUF / NRI', price: 'Starting from ₹999' },
-      { name: 'ITR-3 — Business / Profession / F&O', price: 'Starting from ₹1,499' },
-      { name: 'ITR-4 (Presumptive) — Freelancers & Small Business', price: 'Starting from ₹799' },
-      { name: 'Updated Return (ITR-U) — Old Pending Years', price: 'Starting from ₹1,499' },
-      { name: 'NRI Income Tax Return Filing', price: 'Starting from ₹2,499' },
-      { name: 'Income Tax Notice Reply & Assessment', price: 'Starting from ₹2,999' },
-      { name: 'Tax Computation & Planning', price: 'Starting from ₹999' },
-      { name: 'Advance Tax Computation', price: 'Starting from ₹799' },
-      { name: 'AIS / 26AS Reconciliation', price: 'Starting from ₹699' },
-    ]
-  },
-  {
-    id: 'tds',
-    title: 'TDS Services',
-    shortTitle: 'TDS',
-    emoji: '📊',
-    icon: 'ri-percent-line',
-    startingPrice: '₹999',
-    badge: null,
-    isPopular: false,
-    category: 'TDS',
-    page: 'tds-compliance',
-    shortDesc: 'Quarterly TDS / TCS return filing, Form 16 generation & TDS notice resolution.',
-    whatsappMsg: 'Hi! I need TDS return filing services from Nexa Hub Services.',
-    subcategories: [
-      { name: 'TAN Registration (New)', price: 'Starting from ₹999' },
-      { name: '24Q — Salary TDS Return', price: 'Starting from ₹999/quarter', popular: true },
-      { name: '26Q — Non-Salary TDS Return', price: 'Starting from ₹999/quarter' },
-      { name: '27EQ — TCS Return', price: 'Starting from ₹999/quarter' },
-      { name: 'Form 16 / 16A Generation & Issuance', price: 'Starting from ₹499' },
-      { name: 'TDS Default / Short Deduction Rectification', price: 'Starting from ₹1,499' },
-      { name: 'TDS Refund Claim (Form 26B)', price: 'Starting from ₹999' },
-      { name: 'Lower TDS Deduction Certificate (Sec 197)', price: 'Starting from ₹1,999' },
-      { name: '15CA / 15CB for Foreign Remittances', price: 'Starting from ₹1,999' },
-      { name: 'TDS Notice & Demand Reply', price: 'Starting from ₹2,499' },
-    ]
-  },
-  {
-    id: 'legal',
-    title: 'Legal Services',
-    shortTitle: 'Legal',
-    emoji: '⚖️',
-    icon: 'ri-scales-3-line',
-    startingPrice: '₹4,999',
-    badge: 'Expert Panel',
-    isPopular: false,
-    category: 'Legal',
-    shortDesc: 'Litigation support, appeal filing, demand notice replies & tax dispute resolution.',
-    whatsappMsg: 'Hi! I need legal / litigation assistance from Nexa Hub Services.',
-    subcategories: [
-      { name: 'Income Tax Litigation & Representation', price: 'Starting from ₹4,999', popular: true },
-      { name: 'GST Appeal Filing', price: 'Starting from ₹4,999' },
-      { name: 'CIT(A) Appeal Preparation', price: 'Starting from ₹5,999' },
-      { name: 'ITAT (Tribunal) Appeal', price: 'Starting from ₹9,999' },
-      { name: 'Demand Notice Reply (Income Tax)', price: 'Starting from ₹4,999' },
-      { name: 'Demand Notice Reply (GST)', price: 'Starting from ₹4,999' },
-      { name: 'Scrutiny Assessment Response', price: 'Starting from ₹6,999' },
-      { name: 'Writ Petition / High Court Matter', price: 'On Consultation' },
-      { name: 'Compounding Application', price: 'Starting from ₹4,999' },
-      { name: 'Stay Application — Tax Recovery', price: 'Starting from ₹4,999' },
-    ]
-  },
-  {
-    id: 'pf-esic',
-    title: 'PF & ESIC',
-    shortTitle: 'PF / ESIC',
-    emoji: '🛡️',
-    icon: 'ri-shield-user-line',
-    startingPrice: '₹1,999',
-    badge: null,
-    isPopular: false,
-    category: 'PF / ESIC',
-    shortDesc: 'PF & ESIC registration, monthly challan, returns & employee compliance management.',
-    whatsappMsg: 'Hi! I need PF / ESIC registration or compliance services from Nexa Hub Services.',
-    subcategories: [
-      { name: 'PF (EPFO) Registration', price: 'Starting from ₹1,999', popular: true },
-      { name: 'ESIC Registration', price: 'Starting from ₹1,999' },
-      { name: 'Monthly PF Challan Filing', price: 'Starting from ₹999/month' },
-      { name: 'Monthly ESIC Challan Filing', price: 'Starting from ₹999/month' },
-      { name: 'PF Annual Return (Form 3A / 6A)', price: 'Starting from ₹1,999' },
-      { name: 'PF Withdrawal / Transfer Assistance', price: 'Starting from ₹999' },
-      { name: 'UAN Activation & KYC Update', price: 'Starting from ₹499' },
-      { name: 'PF / ESIC Inspection Support', price: 'Starting from ₹2,499' },
-      { name: 'PF Arrears Computation & Payment', price: 'Starting from ₹1,999' },
-      { name: 'ESIC IP Number & Card Assistance', price: 'Starting from ₹499' },
     ]
   },
   {
@@ -762,7 +496,6 @@ export const PARENT_SERVICES = [
     shortTitle: 'Incorporation',
     emoji: '🏢',
     icon: 'ri-building-4-line',
-    startingPrice: '₹999',
     badge: 'High Demand',
     isPopular: true,
     category: 'Incorporation',
@@ -770,42 +503,16 @@ export const PARENT_SERVICES = [
     shortDesc: 'Company, LLP, OPC, Section 8, Partnership & Proprietorship — complete incorporation support.',
     whatsappMsg: 'Hi! I want to incorporate a company or register a business with Nexa Hub Services.',
     subcategories: [
-      { name: 'Private Limited Company (Pvt Ltd)', price: 'Starting from ₹999 + Govt Fee', popular: true },
-      { name: 'Limited Liability Partnership (LLP)', price: 'Starting from ₹999 + Govt Fee' },
-      { name: 'One Person Company (OPC)', price: 'Starting from ₹999 + Govt Fee' },
-      { name: 'Section 8 Company (NGO)', price: 'Starting from ₹4,999 + Govt Fee' },
-      { name: 'Partnership Firm Registration', price: 'Starting from ₹999' },
-      { name: 'Sole Proprietorship Registration', price: 'Starting from ₹999' },
-      { name: 'Producer Company Registration', price: 'Starting from ₹7,999 + Govt Fee' },
-      { name: 'Nidhi Company Registration', price: 'Starting from ₹9,999 + Govt Fee' },
-      { name: 'DSC (Digital Signature Certificate)', price: 'Starting from ₹999' },
-      { name: 'DIN (Director Identification Number)', price: 'Starting from ₹499' },
-    ]
-  },
-  {
-    id: 'mca',
-    title: 'MCA / ROC Compliance',
-    shortTitle: 'MCA',
-    emoji: '🏛️',
-    icon: 'ri-government-line',
-    startingPrice: '₹499',
-    badge: null,
-    isPopular: false,
-    category: 'MCA',
-    page: 'roc-compliance',
-    shortDesc: 'Annual filings, board minutes, director changes & all MCA / ROC compliance for companies & LLPs.',
-    whatsappMsg: 'Hi! I need MCA / ROC compliance services from Nexa Hub Services.',
-    subcategories: [
-      { name: 'AOC-4 — Annual Financial Statement Filing', price: 'Starting from ₹499', popular: true },
-      { name: 'MGT-7 / MGT-7A — Annual Return Filing', price: 'Starting from ₹499' },
-      { name: 'LLP Form 8 — Statement of Accounts', price: 'Starting from ₹499' },
-      { name: 'LLP Form 11 — Annual Return', price: 'Starting from ₹499' },
-      { name: 'Director Appointment / Resignation (DIR-12)', price: 'Starting from ₹999' },
-      { name: 'Change of Registered Office (INC-22)', price: 'Starting from ₹1,499' },
-      { name: 'Share Allotment / Transfer (PAS-3 / SH-4)', price: 'Starting from ₹1,499' },
-      { name: 'Increase in Authorised Capital (SH-7)', price: 'Starting from ₹1,499' },
-      { name: 'Board Meeting Minutes & Resolutions', price: 'Starting from ₹999' },
-      { name: 'Company Name Change (INC-24)', price: 'Starting from ₹2,499' },
+      { name: 'Private Limited Company (Pvt Ltd)', popular: true },
+      { name: 'Limited Liability Partnership (LLP)' },
+      { name: 'One Person Company (OPC)' },
+      { name: 'Section 8 Company (NGO)' },
+      { name: 'Partnership Firm Registration' },
+      { name: 'Sole Proprietorship Registration' },
+      { name: 'Producer Company Registration' },
+      { name: 'Nidhi Company Registration' },
+      { name: 'DSC (Digital Signature Certificate)' },
+      { name: 'DIN (Director Identification Number)' },
     ]
   },
   {
@@ -828,35 +535,8 @@ export const PARENT_SERVICES = [
       { name: 'RCMC Registration (Export Council)', price: 'Starting from ₹1,999' },
       { name: 'EPCG Licence Application', price: 'On Consultation' },
       { name: 'Advance Authorisation (DFIA)', price: 'On Consultation' },
-      { name: 'RODTEP / MEIS Benefit Claims', price: 'Starting from ₹2,499' },
-      { name: 'GST LUT for Exporters', price: 'Starting from ₹999' },
-      { name: '15CA / 15CB for Import Payments', price: 'Starting from ₹1,999' },
+      { name: 'RoDTEP Benefit Claims', price: 'Starting from ₹2,499' },
       { name: 'Export Invoice & Shipping Bill Guidance', price: 'Starting from ₹999' },
-    ]
-  },
-  {
-    id: 'accounting',
-    title: 'Accounting & Bookkeeping',
-    shortTitle: 'Accounting',
-    emoji: '📒',
-    icon: 'ri-book-2-line',
-    startingPrice: '₹1,999',
-    badge: null,
-    isPopular: false,
-    category: 'Accounting',
-    shortDesc: 'Monthly bookkeeping, P&L, balance sheet preparation & payroll management for businesses.',
-    whatsappMsg: 'Hi! I need Accounting & Bookkeeping services from Nexa Hub Services.',
-    subcategories: [
-      { name: 'Monthly Bookkeeping (Tally / Zoho)', price: 'Starting from ₹1,999/month', popular: true },
-      { name: 'Profit & Loss Statement', price: 'Starting from ₹1,999' },
-      { name: 'Balance Sheet Preparation', price: 'Starting from ₹1,999' },
-      { name: 'Payroll Processing & Salary Slips', price: 'Starting from ₹1,999/month' },
-      { name: 'Bank Reconciliation Statement (BRS)', price: 'Starting from ₹1,999' },
-      { name: 'Accounts Receivable / Payable Management', price: 'Starting from ₹1,999/month' },
-      { name: 'Stock / Inventory Accounting', price: 'Starting from ₹1,999/month' },
-      { name: 'Fixed Asset Register Maintenance', price: 'Starting from ₹1,999' },
-      { name: 'Annual Accounts Finalization', price: 'Starting from ₹2,999' },
-      { name: 'MIS Reports & Cash Flow Statements', price: 'Starting from ₹1,999' },
     ]
   },
   {
@@ -916,10 +596,15 @@ export const NAV_SERVICE_GROUPS = [
     links: [
       { name: 'GST Registration & Returns', href: '/services/gst-services' },
       { name: 'MSME (Udyam) Registration', href: '/services/msme-registration' },
+      { name: 'Company & Business Setup', href: '/services/business-registration' },
+    ],
+  },
+  {
+    heading: 'Licences & Brand',
+    links: [
       { name: 'Trademark Registration', href: '/services/trademark-registration' },
       { name: 'FSSAI Food Licence', href: '/services/fssai-registration' },
       { name: 'Import Export Code (IEC)', href: '/services/iec-registration' },
-      { name: 'Company & Business Setup', href: '/services/business-registration' },
     ],
   },
   {
@@ -929,16 +614,6 @@ export const NAV_SERVICE_GROUPS = [
       { name: 'Startup India (DPIIT)', href: '/services/startup-india' },
       { name: 'Project Reports & CMA Data', href: '/services/project-reports' },
       { name: 'Loan Documentation', href: '/services/loan-documentation' },
-    ],
-  },
-  {
-    heading: 'Tax & Compliance',
-    links: [
-      { name: 'Income Tax Return Filing', href: '/services/income-tax' },
-      { name: 'TDS Return & Compliance', href: '/services/tds-compliance' },
-      { name: 'ROC / Corporate Compliance', href: '/services/roc-compliance' },
-      { name: 'Tax Audit', href: '/services/tax-audit' },
-      { name: 'Certificates & Attestations', href: '/services/certificates' },
     ],
   },
 ]
@@ -956,7 +631,7 @@ export const FEATURED_SERVICES = [
 
 // ─── WHY CHOOSE US (from the client's own promise) ──────────
 export const WHY_CHOOSE_US = [
-  { icon: 'ri-route-line',          title: 'Registration A to Z',      desc: 'From documentation to filing and approvals — one team handles everything, start to finish.' },
+  { icon: 'ri-route-line',          title: 'End-to-End Support',       desc: 'From documentation to filing and approvals — one team handles everything, start to finish.' },
   { icon: 'ri-funds-box-line',      title: 'Funding Guidance',         desc: 'Expert help with PMEGP, Mudra, CGTMSE and Startup India schemes to fund your growth.' },
   { icon: 'ri-checkbox-circle-line',title: 'No Confusion, No Delay',   desc: 'Clear checklists, honest timelines and proactive updates at every step.' },
   { icon: 'ri-flashlight-line',     title: 'Quick Response',           desc: 'Always here when you need us — fast answers on WhatsApp and call.' },
@@ -975,16 +650,16 @@ export const HERO = {
   rotatingWords: ['GST Registration', 'PMEGP Loans', 'Startup India', 'Trademarks', 'MSME Udyam', 'FSSAI Licence'],
   headingLines: ['Start. Fund. Grow.', 'We Handle the Rest.'],
   description:
-    'Business registration from A to Z — documentation, filing, approvals and government funding, handled end-to-end with quick response and complete support, so you can focus on growing your business.',
+    'From business registration to government funding and compliance — we handle the documentation, applications, filings and approvals with complete support at every step, so you can focus on building, growing and scaling your business.',
   image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80',
-  highlights: ['Business Registration A–Z', 'PMEGP & Govt. Funding', 'GST, FSSAI & IEC', 'Trademark Protection'],
+  highlights: ['Business Registration', 'PMEGP & Govt. Funding', 'GST, FSSAI & IEC', 'Trademark Protection'],
 }
 
 // ─── MARQUEE ITEMS ────────────────────────────────────────────
 export const MARQUEE_ITEMS = [
   'PMEGP Loan Scheme', 'GST Registration', 'Startup India (DPIIT)', 'Trademark Registration',
   'MSME Udyam', 'FSSAI Licence', 'Import Export Code', 'Company Registration',
-  'Income Tax Filing', 'Mudra Loan', 'Project Reports', 'ROC Compliance',
+  'GST Return Filing', 'Mudra Loan', 'Project Reports', 'LLP Registration',
 ]
 
 // ─── TESTIMONIALS ─────────────────────────────────────────────
@@ -992,9 +667,9 @@ export const MARQUEE_ITEMS = [
 export const TESTIMONIALS = [
   { id: 1, name: 'Rakesh Patel',     role: 'Manufacturing Unit Owner', city: 'Ahmedabad', rating: 5, text: 'My PMEGP loan looked impossible until Nexa Hub took over. Project report, portal application, bank follow-up — everything was handled and my subsidy came through.' },
   { id: 2, name: 'Nidhi Shah',       role: 'Co-founder, D2C Brand',    city: 'Surat',     rating: 5, text: 'Company registration, trademark and Startup India recognition — all done by one team, with updates on WhatsApp at every step. No confusion, no delay.' },
-  { id: 3, name: 'Imran Qureshi',    role: 'Exporter',                 city: 'Rajkot',    rating: 5, text: 'Got my IEC and GST LUT sorted in days. They clearly understand what exporters need and explain everything simply.' },
+  { id: 3, name: 'Imran Qureshi',    role: 'Exporter',                 city: 'Rajkot',    rating: 5, text: 'Got my IEC and GST registration sorted in days. They clearly understand what exporters need and explain everything simply.' },
   { id: 4, name: 'Meera Joshi',      role: 'Cloud Kitchen Owner',      city: 'Vadodara',  rating: 5, text: 'FSSAI licence and GST registration done together without stepping out once. Very professional and patient with all my questions.' },
-  { id: 5, name: 'Harsh Mehta',      role: 'IT Consultant',            city: 'Gandhinagar', rating: 5, text: 'Quick response is real — I get answers on WhatsApp within minutes. My ITR and GST returns are always filed before the deadline.' },
+  { id: 5, name: 'Harsh Mehta',      role: 'IT Consultant',            city: 'Gandhinagar', rating: 5, text: 'Quick response is real — I get answers on WhatsApp within minutes. My GST returns are always filed before the deadline.' },
   { id: 6, name: 'Kavita Desai',     role: 'Retail Business Owner',    city: 'Ahmedabad', rating: 5, text: 'MSME Udyam registration helped me get a collateral-free loan. Nexa Hub guided me through the whole process.' },
 ]
 
@@ -1004,7 +679,7 @@ export const ABOUT = {
   description:
     'Nexa Hub Services was built to empower startups and MSMEs. Starting a business in India means registrations, approvals, funding applications and ongoing compliance — and that is exactly what we take off your plate. From your first GST number or PMEGP loan to trademarks, Startup India recognition and annual filings, we handle it end-to-end so you can focus on building your business.',
   highlights: [
-    'Business registration from A to Z',
+    'Business registration & licences',
     'Government funding & loan scheme guidance',
     'Quick response — always here when you need',
     'Your work, our responsibility',
@@ -1013,19 +688,19 @@ export const ABOUT = {
   clientCategories: [
     'First-time Entrepreneurs', 'Startups', 'MSMEs & Manufacturers', 'Traders & Shop Owners',
     'Restaurants & Cloud Kitchens', 'Importers & Exporters', 'Freelancers & Professionals',
-    'Private Limited Companies & LLPs', 'Salaried Individuals',
+    'Private Limited Companies & LLPs',
   ],
 }
 
 // ─── SERVICE CATEGORIES (contact form dropdown) ──────────────
-export const SERVICE_CATEGORIES = ['PMEGP / Govt. Funding', 'Startup India (DPIIT)', 'GST', 'MSME / Udyam', 'Trademark', 'FSSAI', 'Import Export (IEC)', 'Company / Business Registration', 'Income Tax (ITR)', 'TDS', 'ROC Compliance', 'Accounting', 'Other']
+export const SERVICE_CATEGORIES = ['PMEGP / Govt. Funding', 'Startup India (DPIIT)', 'GST', 'MSME / Udyam', 'Trademark', 'FSSAI', 'Import Export (IEC)', 'Company / Business Registration', 'Project Report / Loan Documentation', 'Other']
 
 // ─── FAQS ────────────────────────────────────────────────────
 export const FAQS = [
   {
     id: 1,
     q: 'What services does Nexa Hub Services offer?',
-    a: 'We help startups and MSMEs with business registration from A to Z — GST, MSME (Udyam), trademark, FSSAI, Import Export Code and company / LLP registration — plus government funding support (PMEGP loans, Startup India DPIIT recognition, Mudra, CGTMSE), income tax and TDS filing, ROC compliance, accounting and project reports.',
+    a: 'We help startups and MSMEs with business registration — GST, MSME (Udyam), trademark, FSSAI, Import Export Code and company / LLP registration — plus government funding support (PMEGP loans, Startup India DPIIT recognition, Mudra, CGTMSE), project reports and loan documentation.',
   },
   {
     id: 2,

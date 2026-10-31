@@ -11,7 +11,7 @@ const FAQSection = ({ faqs = FAQS }) => {
           <div className="eyebrow mb-6">FAQ</div>
           <h2 className="section-title lg:text-5xl mb-5">Questions & Answers</h2>
           <p className="text-gray-500 text-[16px] leading-relaxed mb-8 max-w-md">
-            Quick, clear answers to the questions we hear most about registrations, taxation and compliance.
+            Quick, clear answers to the questions we hear most about registrations, government funding and compliance.
           </p>
           <div className="rounded-3xl bg-mist p-7 max-w-md">
             <p className="text-ink font-bold text-lg mb-1">Still have a question?</p>

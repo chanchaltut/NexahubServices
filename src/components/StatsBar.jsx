@@ -48,7 +48,8 @@ const StatsBar = () => {
           <div className="relative grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-8 w-full max-w-4xl mx-auto">
             {STATS.map((stat, i) => (
               <div key={stat.label} className="flex flex-col items-center">
-                <p className="font-display italic text-[40px] md:text-[52px] font-extrabold text-ink leading-none mb-3 tabular-nums">
+                <p className="font-display italic text-[34px] sm:text-[40px] md:text-[52px] font-extrabold text-ink leading-none mb-3 tabular-nums whitespace-nowrap">
+                  {stat.prefix}
                   <span ref={(el) => (countersRef.current[i] = el)}>0</span>
                   <span className="text-gradient">{stat.suffix}</span>
                 </p>

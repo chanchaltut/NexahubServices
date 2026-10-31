@@ -52,9 +52,9 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact Us | Nexa Hub Services — Free Tax & Compliance Consultation"
+        title="Contact Us | Nexa Hub Services — Free Business Registration & Funding Consultation"
         description="Contact Nexa Hub Services, Ahmedabad — call or WhatsApp +91 98750 37579 for GST, PMEGP loan, Startup India, trademark, MSME, FSSAI and IEC registration. Quick response, free guidance."
-        keywords="contact Nexa Hub Services, tax consultant contact, GST consultant phone number, free tax consultation, company registration enquiry"
+        keywords="contact Nexa Hub Services, GST registration enquiry, PMEGP loan enquiry, free business consultation Ahmedabad, company registration enquiry"
         path="/contact"
         jsonLd={[breadcrumbSchema([{ name: 'Contact Us', path: '/contact' }])]}
       />

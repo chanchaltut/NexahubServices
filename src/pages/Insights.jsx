@@ -6,36 +6,9 @@ import { breadcrumbSchema } from '../utils/schema';
 
 
 // ─── BLOG ARTICLES ─────────────────────────────────────────────
-// All articles are Income Tax / GST / TDS / Business Registration only
+// All articles are GST / Business Registration only
 // Written to answer real user search queries for SEO & AEO
 const articles = [
-  {
-    id: 1,
-    title: 'How to File ITR Online in 2025: A Complete Guide for Salaried Employees',
-    category: 'Income Tax',
-    date: 'September 15, 2025',
-    author: 'Nexa Hub Services Team',
-    readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80',
-    excerpt: 'Every salaried person earning above ₹3 lakh (new regime) must file an ITR. Here is exactly how to do it step by step, which form to pick, and the most common mistakes to avoid.',
-    content: [
-      `Filing your Income Tax Return (ITR) online doesn't have to be stressful. With a bit of preparation and the right guidance, most salaried employees can get it done in under an hour. Here's a simple, plain-English walkthrough of the entire process.`,
-
-      `**Who must file ITR?**\nIf your gross income exceeds ₹3 lakh under the new tax regime (or ₹2.5 lakh under the old regime), you are legally required to file an ITR — even if no tax is owed. Additionally, if you have foreign assets, multiple sources of income, or want to carry forward a capital loss, filing is mandatory regardless of income.`,
-
-      `**Which ITR form should you use?**\nFor most salaried employees with one employer, one house property, and no business income, ITR-1 (Sahaj) is the right form. If you have capital gains from stocks or mutual funds, you'll need ITR-2. Freelancers and consultants earning professional income should file ITR-3 or ITR-4 (Sugam).`,
-
-      `**Documents you'll need**\nBefore you start, keep these ready: your Form 16 from your employer, AIS (Annual Information Statement) from the income tax portal, bank statements, investment proofs under Section 80C (LIC, PPF, ELSS), 80D (health insurance premiums), home loan interest certificate, and your PAN and Aadhaar.`,
-
-      `**Step-by-step filing process**\nVisit incometax.gov.in and log in with your PAN. Go to e-File → Income Tax Returns → File Income Tax Return. Select Assessment Year 2025-26 and choose Online mode. Select the appropriate ITR form. The portal pre-fills most of your data — verify it against your Form 16 and AIS carefully. Enter your deductions, compute tax, verify using Aadhaar OTP or Net Banking, and submit. You'll receive an acknowledgment (ITR-V) in your email within minutes.`,
-
-      `**Deadlines and penalties**\nThe usual last date is July 31 for individuals. Filing after this attracts a late fee of ₹1,000 (if income ≤ ₹5 lakh) or ₹5,000. More importantly, late filing means you cannot carry forward losses from stocks or business, and you may face interest under Section 234A.`,
-
-      `**Pro tip:** Always download and cross-check your AIS before filing. Many clients get notices simply because they forgot to report a fixed deposit interest or mutual fund redemption that already appears in the AIS.`,
-
-      `If you have capital gains, NRI income, foreign assets, or received a tax notice — it's best to get professional help. The cost of getting it wrong is always higher than the professional fees.`,
-    ],
-  },
   {
     id: 2,
     title: 'GST Registration in India 2025: Who Needs It, Threshold Limits & How to Apply',
@@ -59,83 +32,6 @@ const articles = [
       `**Benefits of being GST registered**\nYou can charge GST on your invoices and claim Input Tax Credit (ITC) on your business purchases — which directly reduces your cost. It also makes you a credible business partner for other registered companies that need tax invoices from their suppliers.`,
 
       `**Important:** Doing business without GST registration when you're liable is an offence. The penalty is ₹10,000 or the amount of tax evaded — whichever is higher. If the GST department detects it, you'll also owe all the back taxes with interest.`,
-    ],
-  },
-  {
-    id: 3,
-    title: 'Old Tax Regime vs New Tax Regime 2025: Which One Saves You More Money?',
-    category: 'Income Tax',
-    date: 'August 28, 2025',
-    author: 'Nexa Hub Services Team',
-    readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80',
-    excerpt: 'The government made the new tax regime the default in 2023. But that doesn\'t mean it\'s better for everyone. Here\'s a straightforward comparison with real numbers to help you decide.',
-    content: [
-      `Every year, one of the most common questions we get is: "Which tax regime should I choose?" The answer depends on your income level, how many deductions you can claim, and your lifestyle. Let's lay out the facts.`,
-
-      `**Tax slabs comparison for FY 2025-26**\n\nOld Regime: Up to ₹2.5L — Nil | ₹2.5L-₹5L — 5% | ₹5L-₹10L — 20% | Above ₹10L — 30%\n\nNew Regime (Default): Up to ₹3L — Nil | ₹3L-₹7L — 5% | ₹7L-₹10L — 10% | ₹10L-₹12L — 15% | ₹12L-₹15L — 20% | Above ₹15L — 30%\n\nAlso, under the new regime, there's a rebate under Section 87A — if your income is up to ₹7 lakh, the tax is zero. This is a massive benefit for people earning under ₹7 lakh.`,
-
-      `**Who benefits from the old regime?**\nThe old regime is better if you have significant deductions: HRA (House Rent Allowance) for rent-paying employees, ₹1.5 lakh under Section 80C (LIC, PPF, ELSS, home loan principal), home loan interest (up to ₹2 lakh under Section 24b), health insurance under Section 80D, and NPS contribution under Section 80CCD.`,
-
-      `**A quick example:** Salaried employee earning ₹12 lakh, claiming ₹1.5L (80C) + ₹1.8L (HRA) + ₹2L (home loan interest) + ₹25K (80D) = total deductions of ₹5.55L. Taxable income in old regime = ₹6.45L, tax ≈ ₹43,000. In new regime, taxable income = ₹12L, tax ≈ ₹90,000. The old regime saves ₹47,000 here.`,
-
-      `**Who benefits from the new regime?**\nIf you have minimal deductions, are renting informally (no formal HRA), have no home loan, or your investments are small — the new regime's simpler slabs often work out better. For someone earning ₹7 lakh with no major deductions, the tax is literally ₹0 under the new regime thanks to the 87A rebate.`,
-
-      `**The default trap:** From FY 2023-24, the new regime became the default. If you don't explicitly choose the old regime, you'll automatically be put in the new one. To choose the old regime, you must file Form 10-IE (for business income) or select it when filing your ITR.`,
-
-      `**Our advice:** Do a rough calculation both ways before filing. For most salaried people with home loans and HRA, the old regime often wins if income is between ₹10-20 lakh. For simpler earners without big deductions, the new regime is usually better. When in doubt, consult a qualified professional — the right choice can save you tens of thousands of rupees.`,
-    ],
-  },
-  {
-    id: 4,
-    title: 'TDS on Salary, Rent & Professional Fees: Rates, Thresholds & Filing Guide 2025',
-    category: 'TDS',
-    date: 'August 15, 2025',
-    author: 'Nexa Hub Services Team',
-    readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80',
-    excerpt: 'If you\'re paying salary, rent above ₹50,000/month, or professional fees above ₹30,000 — you\'re probably required to deduct TDS. Here\'s a complete guide to the rates, due dates, and filing process.',
-    content: [
-      `Tax Deducted at Source (TDS) is a mechanism where the payer deducts tax before making a payment and deposits it with the government. It's not optional — failing to deduct or deposit TDS on time leads to penalties, disallowed business expenses, and interest charges.`,
-
-      `**Common TDS sections and rates:**\n\nSection 192 — Salary: Rate based on the employee's applicable income tax slab (no fixed rate). Threshold: No minimum; deduct if annual salary exceeds basic exemption limit.\n\nSection 194C — Contractor/Sub-contractor payments: 1% (individual/HUF) or 2% (others). Single payment threshold: ₹30,000; annual aggregate: ₹1 lakh.\n\nSection 194J — Professional/Technical fees: 10% (usually). Threshold: ₹30,000 per transaction (annual).\n\nSection 194I — Rent: 10% for land/building; 2% for machinery. Threshold: ₹50,000 per month.\n\nSection 194Q — Purchase of goods: 0.1% if buyer's annual turnover > ₹10 crore. Threshold: Purchase > ₹50 lakh from one seller.`,
-
-      `**When to deduct and deposit TDS**\nDeduct TDS at the time of payment or at the time of credit — whichever is earlier. Deposit to the government by the 7th of the following month (except March, where the deadline is April 30). For government deductors, it's the same day of deduction.`,
-
-      `**Quarterly TDS returns**\nYou must file quarterly TDS returns: 24Q for salary, 26Q for non-salary payments to residents, 27Q for payments to non-residents, 27EQ for TCS. Due dates: Q1 (Apr-Jun) → July 31 | Q2 (Jul-Sep) → October 31 | Q3 (Oct-Dec) → January 31 | Q4 (Jan-Mar) → May 31.`,
-
-      `**Form 16 and 16A**\nAfter filing quarterly returns, you must issue Form 16 (for employees) and Form 16A (for others) showing the TDS deducted and deposited on their behalf. Employees use this to file their ITR. Failure to issue Form 16 on time attracts ₹100 per day penalty.`,
-
-      `**What happens if you don't deduct TDS?**\nThe entire expense becomes disallowed — meaning you can't claim it as a business deduction. You also owe interest at 1% per month (failure to deduct) or 1.5% per month (failure to deposit), plus a penalty of ₹10,000 to ₹1 lakh under Section 271H. The income tax department does scrutiny assessments specifically for TDS defaults, especially on rent and contractor payments.`,
-
-      `TDS compliance might seem tedious, but it's one of the areas where businesses get caught most often. Keeping a simple TDS calendar and working with a qualified professional for quarterly filing is the smartest investment for any business paying more than a few lakh rupees a year.`,
-    ],
-  },
-  {
-    id: 5,
-    title: 'Received an Income Tax Notice? Here\'s Exactly What to Do',
-    category: 'Income Tax',
-    date: 'August 5, 2025',
-    author: 'Nexa Hub Services Team',
-    readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80',
-    excerpt: 'Getting an income tax notice is scary — but it\'s not always a big deal. Most notices are informational or routine. Here\'s how to understand which notice you got and how to respond correctly.',
-    content: [
-      `Every year, millions of taxpayers receive income tax notices. Most people panic — but the reality is that a significant portion of these notices are automated, routine, and can be resolved easily if you respond correctly and on time.`,
-
-      `**The most common types of income tax notices:**\n\nIntimation u/s 143(1): This is the most common. It's an automated communication after your ITR is processed. It may show a demand (tax payable) or a refund. Common reasons: mismatch between your ITR and Form 26AS, incorrect computation, or deductions not matching. This is NOT a scrutiny notice. You can respond online.`,
-
-      `Notice u/s 139(9): Sent when your ITR has a defect — like selecting the wrong form, a field that doesn't add up, or missing a mandatory schedule. You have 15 days to correct and re-file.`,
-
-      `Notice u/s 148/148A: Sent when the IT department believes income has escaped assessment (i.e., you earned income and didn't declare it). This is a serious notice. Always get professional help here.`,
-
-      `Notice u/s 143(2): Scrutiny notice. The department wants to verify specific claims in your return. This triggers a full assessment proceeding and requires detailed documentation.`,
-
-      `**What to do immediately after receiving a notice:**\nDon't ignore it — there are strict response deadlines. Log in to incometax.gov.in and find the notice under "Pending Actions" or "e-Proceedings". Read it carefully to understand the specific reason. Gather your relevant documents — bank statements, investment proofs, AIS, Form 16. If it's a simple mismatch, you can respond directly online. For anything beyond a 143(1) intimation, consult a qualified professional.`,
-
-      `**Documents to always keep ready:**\nSave your ITR acknowledgment (ITR-V) for at least 6 years. Keep Form 26AS / AIS printouts for the year. Retain investment receipts, rent agreements, loan certificates, and salary slips. Anything you claimed as a deduction or exemption should have supporting documentation.`,
-
-      `**Never miss the deadline.** Most notices give you 15-30 days to respond. Missing the deadline converts a simple issue into a contested assessment. If you're unsure about a notice, the safest approach is to call your professional the same day you receive it — most issues are sorted within a week when handled promptly.`,
     ],
   },
   {
@@ -225,7 +121,7 @@ const isoDate = (str) => {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 };
 
-const categories = ['All', 'Income Tax', 'GST', 'TDS', 'Business Registration'];
+const categories = ['All', 'GST', 'Business Registration'];
 
 // Renders "**Heading**" lines as h3 and inline **bold** segments as <strong>
 const ArticleBody = ({ content }) => (
@@ -283,18 +179,18 @@ const Insights = () => {
   return (
     <>
       <SEO
-        title="Tax, GST & Compliance Insights | Nexa Hub Services"
-        description="Plain-English guides on Income Tax, GST, TDS and business registration in India — practical answers to the questions taxpayers and business owners ask most, from the Nexa Hub Services team."
-        keywords="income tax guide India, GST guide, ITR filing guide, TDS rates, old vs new tax regime, company vs LLP vs proprietorship, GST for freelancers, Nexa Hub Services blog"
+        title="GST & Business Registration Insights | Nexa Hub Services"
+        description="Plain-English guides on GST and business registration in India — practical answers to the questions business owners ask most, from the Nexa Hub Services team."
+        keywords="GST registration guide India, GST return filing guide, GSTR-1 vs GSTR-3B, company vs LLP vs proprietorship, GST for freelancers, Nexa Hub Services blog"
         path="/blog"
         jsonLd={[blogSchema, breadcrumbSchema([{ name: 'Insights', path: '/blog' }])]}
       />
 
       <PageHero
         eyebrow="Knowledge Hub"
-        title="Tax & Compliance"
+        title="GST & Business"
         highlight="Insights"
-        description="Plain-English guides on Income Tax, GST, TDS and Business Registration — written to answer the questions real taxpayers search for."
+        description="Plain-English guides on GST and Business Registration — written to answer the questions real business owners search for."
         crumbs={[{ name: 'Insights' }]}
         image="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=2000&q=80"
       />
@@ -361,7 +257,7 @@ const Insights = () => {
             <div className="relative max-w-xl mx-auto">
               <i className="ri-mail-send-line text-brand text-4xl mb-3 block" />
               <h2 className="text-2xl sm:text-3xl font-bold mb-3">Get Deadline Reminders in Your Inbox</h2>
-              <p className="text-gray-500 mb-7">Income Tax & GST updates, due-date reminders and practical guides — no spam.</p>
+              <p className="text-gray-500 mb-7">GST updates, due-date reminders and practical guides — no spam.</p>
               {subscribed ? (
                 <p className="text-brand font-bold">Thanks for subscribing!</p>
               ) : (
