@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BRAND, FEATURED_SERVICES, SERVICES, TEAM, waLink } from '../utils/constants';
+import { BRAND, FEATURED_SERVICES, SERVICES, waLink } from '../utils/constants';
 import useReveal from '../hooks/useReveal';
 
 const imageOf = (slug, width) => SERVICES.find((s) => s.slug === slug)?.image.replace(/w=\d+/, `w=${width}`);
@@ -80,18 +80,18 @@ const FeaturedServices = () => {
             </Link>
           ))}
 
-          {/* Personal CTA — mirrors the catalogue's "Message the founder" */}
+          {/* Personal CTA */}
           <div className="reveal col-span-2 rounded-3xl sm:rounded-4xl bg-mist relative overflow-hidden p-7 md:p-9 flex flex-col justify-between">
             <div className="absolute inset-0 hub-pattern-light" />
             <div className="absolute -bottom-16 -right-16 w-64 h-64 rounded-full bg-brand/15 blur-2xl" />
             <div className="relative">
               <p className="text-brand text-[12px] font-bold uppercase tracking-widest mb-3">Looking for something else?</p>
               <h3 className="text-2xl md:text-[28px] font-bold leading-snug max-w-md">
-                Message {TEAM[0].name} directly — get the right answer in minutes.
+                Message us directly — get the right answer in minutes.
               </h3>
             </div>
             <div className="relative flex flex-wrap items-center gap-3 mt-6">
-              <a href={waLink(`Hi ${TEAM[0].name}! I'm looking for help with my business.`)} target="_blank" rel="noopener noreferrer" className="btn-brand">
+              <a href={waLink(`Hi ${BRAND.shortName}! I'm looking for help with my business.`)} target="_blank" rel="noopener noreferrer" className="btn-brand">
                 <i className="ri-whatsapp-line text-lg" /> Message on WhatsApp
               </a>
               <a href={BRAND.phoneLink} className="btn-ghost bg-white">

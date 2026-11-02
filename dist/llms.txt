@@ -1,6 +1,6 @@
 # Nexa Hub Services
 
-> Nexa Hub Services (www.nexahubservices.in) is an Ahmedabad-based business services firm founded by Yogi Surendra Nath. It empowers startups and MSMEs with strategic advisory, government funding support, business registration and compliance — delivered online across India with quick response and complete support.
+> Nexa Hub Services (www.nexahubservices.in) is an Ahmedabad-based business services firm. It empowers startups and MSMEs with strategic advisory, government funding support, business registration and compliance — delivered online across India with quick response and complete support.
 
 ## Signature services
 - [PMEGP Loan Scheme](https://www.nexahubservices.in/services/pmegp-loan): Eligibility check, bankable project report, KVIC portal application and bank follow-up. Project cost up to ₹50 lakh (manufacturing) / ₹20 lakh (service) with 15–35% subsidy.
@@ -15,14 +15,17 @@
 - [Company & Business Registration](https://www.nexahubservices.in/services/business-registration) · [Project Reports & CMA](https://www.nexahubservices.in/services/project-reports) · [Loan Documentation](https://www.nexahubservices.in/services/loan-documentation)
 - Also: Mudra and CGTMSE loan support.
 
+## Websites & apps
+- [Website Development](https://www.nexahubservices.in/services/website-development): E-commerce stores, business & corporate websites, booking & appointment websites, school & coaching websites. SEO, AEO & GEO, enquiry form + WhatsApp, admin panel. Quoted on consultation.
+- [Mobile App Development](https://www.nexahubservices.in/services/app-development): Android & iPhone apps — shopping, booking, food ordering and business apps, with admin panel, push notifications and Play Store / App Store publishing. Quoted on consultation.
+
 ## Key facts
 - Business name: Nexa Hub Services
-- Founder: Yogi Surendra Nath
 - Location: Ahmedabad, Gujarat, India — serving clients across India online
 - Phone / WhatsApp: +91 98750 37579
 - Website: https://www.nexahubservices.in
-- Promise: "Your work, my responsibility" — no confusion, no delay, quick response.
-- Pricing: "Starting from" professional fees for most registrations; company incorporation, new GST registration and government funding services are quoted on consultation. Government fees are charged at actuals.
+- Promise: "Your work, our responsibility" — no confusion, no delay, quick response.
+- Pricing: "Starting from" professional fees for most registrations; company incorporation, new GST registration, government funding, website and app development are quoted on consultation. Government fees are charged at actuals.
 - Track record: 1,250+ clients, ₹25 Cr+ funds raised, ₹5 Cr+ grants, 2,150+ certificates.
 
 ## Pages

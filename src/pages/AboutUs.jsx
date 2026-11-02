@@ -4,7 +4,6 @@ import PageHero from '../components/PageHero';
 import AboutSection from '../components/AboutSection';
 import StatsBar from '../components/StatsBar';
 import WhyChooseUs from '../components/WhyChooseUs';
-import TeamSection from '../components/TeamSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import CTABanner from '../components/CTABanner';
 import { ABOUT, BRAND } from '../utils/constants';
@@ -20,8 +19,8 @@ const AboutUs = () => (
   <>
     <SEO
       title="About Us | Nexa Hub Services — Business Registration, Funding & Compliance Support"
-      description="Nexa Hub Services, founded by Yogi Surendra Nath in Ahmedabad, empowers startups & MSMEs with strategic advisory, government funding, business registration and compliance support."
-      keywords="about Nexa Hub Services, Yogi Surendra Nath, business registration consultant Ahmedabad, PMEGP loan consultant, startup funding support, company registration services"
+      description="Nexa Hub Services, Ahmedabad, empowers startups & MSMEs with strategic advisory, government funding, business registration and compliance support."
+      keywords="about Nexa Hub Services, business registration consultant Ahmedabad, PMEGP loan consultant, startup funding support, company registration services"
       path="/about"
       jsonLd={[breadcrumbSchema([{ name: 'About Us', path: '/about' }])]}
     />
@@ -65,7 +64,6 @@ const AboutUs = () => (
       </div>
     </section>
 
-    <TeamSection />
     <TestimonialsSection />
     <CTABanner />
   </>

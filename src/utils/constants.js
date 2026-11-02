@@ -1,6 +1,6 @@
 // ═══════════════════════════════════════════════════════════
 //  Nexa Hub Services — Central Data Store
-//  All content, services, FAQs, team and stats live here.
+//  All content, services, FAQs and stats live here.
 //  Edit this file to update any content site-wide.
 //
 //  Anything marked  ← PLACEHOLDER  must be replaced with the
@@ -14,7 +14,6 @@ export const BRAND = {
   name: 'Nexa Hub Services',
   shortName: 'Nexa Hub',
   legalName: 'Nexa Hub Services',
-  founder: 'Yogi Surendra Nath',
   tagline: 'Empowering Startups & MSMEs',
   subTagline: 'Strategic advisory, government funding, business registration and compliance support for startups and MSMEs.',
   description:
@@ -409,6 +408,202 @@ export const SERVICES = [
     "timeline": "1-2 working days",
     "whatsappMsg": "Hi! I want to register my business as an MSME (Udyam).",
     "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 17,
+    "slug": "website-development",
+    "title": "Website Development",
+    "shortTitle": "Website Development",
+    "category": "Websites & Apps",
+    "shortDesc": "Fast, mobile-first websites that get found on Google and AI search — online stores, business sites, booking sites and more.",
+    "overview": "Your website is often the first place a customer meets your business. Nexa Hub Services designs and builds fast, mobile-first websites made for your kind of business — whether you sell online, take bookings, run a school or want a professional company presence. Every site is set up to rank on Google and AI search, and sends enquiries straight to your WhatsApp.",
+    "services": [
+      "Custom design in your brand, mobile-first",
+      "We write the page content for you",
+      "SEO, AEO & GEO — rank on Google and AI search",
+      "Google Search Console & Bing Webmaster Tools",
+      "Google Business Profile & local SEO setup",
+      "Enquiry form & WhatsApp button",
+      "Google Analytics to track visitors",
+      "Admin panel to edit text, services & photos",
+      "Domain, hosting & SSL setup",
+      "Free changes & support after launch"
+    ],
+    "highlights": [
+      { "icon": "ri-search-eye-line", "title": "Built to Get Found", "text": "SEO, AEO and GEO so customers find you on Google, Bing and AI assistants." },
+      { "icon": "ri-whatsapp-line", "title": "Enquiries on WhatsApp", "text": "Every form and button sends leads straight to your phone." },
+      { "icon": "ri-edit-box-line", "title": "Edit It Yourself", "text": "Change text, services, products and photos from your own admin panel." }
+    ],
+    "nichesTitle": "Websites for Every Kind of Business",
+    "niches": [
+      {
+        "icon": "ri-shopping-cart-2-line",
+        "title": "E-commerce Store",
+        "for": "Retailers, D2C brands, wholesalers & home businesses",
+        "features": [
+          "Product catalogue with categories & search",
+          "Cart & checkout with Razorpay (UPI, cards, net banking)",
+          "Customer login with phone OTP, Google or email",
+          "Orders, customers & stock in one admin dashboard",
+          "Discount codes, offers & festive banners",
+          "Order alerts on WhatsApp & email"
+        ]
+      },
+      {
+        "icon": "ri-building-2-line",
+        "title": "Business & Corporate Website",
+        "for": "Companies, manufacturers, CAs, lawyers & consultants",
+        "features": [
+          "A dedicated page for every service or product",
+          "Full SEO, AEO & GEO with Google Business Profile",
+          "Enquiry form, WhatsApp button & Google Analytics",
+          "Blog for news, updates & offers",
+          "Team, clients & testimonials sections",
+          "Admin panel to update content yourself"
+        ]
+      },
+      {
+        "icon": "ri-calendar-check-line",
+        "title": "Booking & Appointment Website",
+        "for": "Clinics, salons, gyms, restaurants & hotels",
+        "features": [
+          "Online booking calendar with time slots",
+          "Advance payments & deposits via Razorpay",
+          "Menu, services & price list pages",
+          "Booking & enquiry dashboard",
+          "Google Maps, one-tap call & directions",
+          "Local SEO to rank for \"near me\" searches"
+        ]
+      },
+      {
+        "icon": "ri-graduation-cap-line",
+        "title": "School & Coaching Website",
+        "for": "Schools, coaching classes, academies & institutes",
+        "features": [
+          "Courses, batches & faculty pages",
+          "Admission enquiry & online registration form",
+          "Notices, events & results section",
+          "Photo & video gallery",
+          "Online fee payment via Razorpay",
+          "Blog for updates, exam tips & announcements"
+        ]
+      }
+    ],
+    "documentsTitle": "What we need from you",
+    "documents": [
+      "Business name, logo & brand colours (if any)",
+      "List of services or products with short details",
+      "Photos of your work, products or premises",
+      "Contact details, address & WhatsApp number",
+      "Existing domain / hosting login (if you already have one)",
+      "Sample websites you like (optional)"
+    ],
+    "faqs": [
+      { "id": 1, "q": "Which kind of website is right for my business?", "a": "If you sell products, an e-commerce store; if you take appointments or table bookings, a booking website; for schools and coaching classes, an institute website; and for most service businesses and companies, a business website with a page for each service. Tell us about your business on WhatsApp and we will suggest the right fit." },
+      { "id": 2, "q": "Will my website show up on Google?", "a": "Yes. Every website is built with SEO basics, submitted to Google Search Console and Bing Webmaster Tools, and set up for AI search (AEO and GEO) so it can be found and recommended. For local businesses we also set up your Google Business Profile." },
+      { "id": 3, "q": "Can I update the website myself?", "a": "Yes. Business, booking, e-commerce and school websites can include an admin panel to change text, services, products, prices and photos yourself. If you prefer, we make the changes for you." },
+      { "id": 4, "q": "How is the cost decided?", "a": "It depends on the type of website, number of pages and features like payments, bookings or a product catalogue. Share your requirement and we will send a clear, fixed quote — no hidden charges." }
+    ],
+    "whatsappMsg": "Hi! I want a website for my business. Please guide me.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 18,
+    "slug": "app-development",
+    "title": "Mobile App Development",
+    "shortTitle": "App Development",
+    "category": "Websites & Apps",
+    "shortDesc": "Android and iPhone apps in your brand — shopping, booking, food ordering and business apps, published on Play Store & App Store.",
+    "overview": "A mobile app keeps your business one tap away on your customer's phone. Nexa Hub Services builds Android and iPhone apps from a single codebase, designed in your brand and built for your kind of business — shopping, bookings, food ordering or a business showcase. We publish the app on Google Play and the App Store for you and support you after launch.",
+    "services": [
+      "Android & iPhone apps from one codebase",
+      "Custom design in your brand",
+      "Customer login with phone OTP, Google or email",
+      "Push notifications for offers & updates",
+      "One-tap call, WhatsApp & Google Maps",
+      "Admin panel for orders, bookings & users",
+      "Razorpay payments (UPI, cards, wallets)",
+      "Analytics & crash reports",
+      "Published on Google Play & App Store",
+      "Bug-fix support after launch"
+    ],
+    "highlights": [
+      { "icon": "ri-smartphone-line", "title": "Android & iPhone", "text": "One app that runs smoothly on both platforms, built in your brand." },
+      { "icon": "ri-notification-3-line", "title": "Push Offers Anytime", "text": "Send offers and updates straight to your customers' phones." },
+      { "icon": "ri-google-play-line", "title": "Published for You", "text": "We handle the Google Play and App Store listing and approval." }
+    ],
+    "nichesTitle": "Apps for Every Kind of Business",
+    "niches": [
+      {
+        "icon": "ri-shopping-bag-3-line",
+        "title": "Shopping & E-commerce App",
+        "for": "Retail stores, D2C brands, grocery & wholesale",
+        "features": [
+          "Product catalogue, search & wishlist",
+          "Cart & Razorpay payments",
+          "Customer profiles & order history",
+          "Push notifications for offers & order updates",
+          "Orders, products & users in one admin dashboard",
+          "Offline mode for browsing the catalogue"
+        ]
+      },
+      {
+        "icon": "ri-calendar-schedule-line",
+        "title": "Booking & Appointment App",
+        "for": "Salons, clinics, gyms, tutors & service providers",
+        "features": [
+          "Slot booking with date & time picker",
+          "Customer login with phone OTP",
+          "Booking reminders via push notification",
+          "Advance payment option via Razorpay",
+          "Bookings & customers in your admin panel",
+          "In-app inbox for messages & updates"
+        ]
+      },
+      {
+        "icon": "ri-restaurant-2-line",
+        "title": "Food Ordering App",
+        "for": "Restaurants, cafés, bakeries & cloud kitchens",
+        "features": [
+          "Menu with categories, photos & add-ons",
+          "Cart, checkout & online payments",
+          "Order status updates via push notification",
+          "Orders dashboard for your kitchen",
+          "Coupons, combos & offers",
+          "Repeat orders from order history"
+        ]
+      },
+      {
+        "icon": "ri-store-3-line",
+        "title": "Business & Service App",
+        "for": "Service businesses, dealers, agencies & institutes",
+        "features": [
+          "Services, products & photo gallery",
+          "One-tap call, WhatsApp & Google Maps",
+          "Enquiry form with leads in your admin panel",
+          "Push notifications for offers & news",
+          "Customer login & saved profiles",
+          "Edit content yourself, anytime"
+        ]
+      }
+    ],
+    "documentsTitle": "What we need from you",
+    "documents": [
+      "Business name, logo & brand colours",
+      "List of screens / features you want",
+      "Products, services or menu with photos",
+      "Razorpay account (for payments)",
+      "Google Play / Apple developer account (we help you create one)",
+      "Sample apps you like (optional)"
+    ],
+    "faqs": [
+      { "id": 1, "q": "Will my app work on both Android and iPhone?", "a": "Yes. We build apps with a single cross-platform codebase, so the same app runs on Android and iPhone. You can start with Android only and add iPhone later." },
+      { "id": 2, "q": "Do you publish the app on Play Store and App Store?", "a": "Yes. We prepare the store listing, screenshots and description, and handle submission and approval on Google Play and the Apple App Store." },
+      { "id": 3, "q": "Can I manage orders and bookings myself?", "a": "Yes. Shopping, booking and food ordering apps come with an admin panel where you can see orders, bookings and users, update products or menus, and send push notifications." },
+      { "id": 4, "q": "How is the cost decided?", "a": "It depends on the number of screens, the features you need (logins, payments, bookings, admin panel) and whether you want Android, iPhone or both. Share your idea and we will send a clear, fixed quote." }
+    ],
+    "whatsappMsg": "Hi! I want a mobile app for my business. Please guide me.",
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&q=80&auto=format&fit=crop"
   }
 ]
 
@@ -586,6 +781,51 @@ export const PARENT_SERVICES = [
       { name: 'Product Approval & Labelling Guidance', price: 'Starting from ₹1,999' },
     ]
   },
+  {
+    id: 'website',
+    title: 'Website Development',
+    shortTitle: 'Websites',
+    icon: 'ri-global-line',
+    badge: 'New',
+    isPopular: false,
+    category: 'Websites & Apps',
+    page: 'website-development',
+    shortDesc: 'E-commerce stores, business websites, booking sites & school websites — built to rank on Google and AI search.',
+    whatsappMsg: 'Hi! I want a website for my business. Please guide me.',
+    footnote: '* Quoted on consultation, based on pages and features.',
+    subcategories: [
+      { name: 'E-commerce Store (Catalogue, Cart & Payments)', popular: true },
+      { name: 'Business & Corporate Website', popular: true },
+      { name: 'Booking & Appointment Website' },
+      { name: 'School & Coaching Institute Website' },
+      { name: 'Landing Page for Ads & Campaigns' },
+      { name: 'SEO, AEO & GEO (Google + AI Search)' },
+      { name: 'Google Business Profile Setup' },
+      { name: 'Website Redesign & Maintenance' },
+    ]
+  },
+  {
+    id: 'app',
+    title: 'Mobile App Development',
+    shortTitle: 'Apps',
+    icon: 'ri-smartphone-line',
+    badge: 'New',
+    isPopular: false,
+    category: 'Websites & Apps',
+    page: 'app-development',
+    shortDesc: 'Android & iPhone apps — shopping, bookings, food ordering and business apps, published on Play Store & App Store.',
+    whatsappMsg: 'Hi! I want a mobile app for my business. Please guide me.',
+    footnote: '* Quoted on consultation, based on screens and features.',
+    subcategories: [
+      { name: 'Shopping & E-commerce App', popular: true },
+      { name: 'Booking & Appointment App' },
+      { name: 'Food Ordering App (Restaurants & Cloud Kitchens)' },
+      { name: 'Business & Service App' },
+      { name: 'Admin Panel & Dashboard' },
+      { name: 'Play Store & App Store Publishing' },
+      { name: 'App Maintenance & Updates' },
+    ]
+  },
 ]
 
 // ─── SERVICE GROUPS (navbar mega-menu) ──────────────────────
@@ -613,6 +853,13 @@ export const NAV_SERVICE_GROUPS = [
       { name: 'Startup India (DPIIT)', href: '/services/startup-india' },
       { name: 'Project Reports & CMA Data', href: '/services/project-reports' },
       { name: 'Loan Documentation', href: '/services/loan-documentation' },
+    ],
+  },
+  {
+    heading: 'Websites & Apps',
+    links: [
+      { name: 'Website Development', href: '/services/website-development' },
+      { name: 'Mobile App Development', href: '/services/app-development' },
     ],
   },
 ]
@@ -659,6 +906,7 @@ export const MARQUEE_ITEMS = [
   'PMEGP Loan Scheme', 'GST Registration', 'Startup India (DPIIT)', 'Trademark Registration',
   'MSME Udyam', 'FSSAI Licence', 'Import Export Code', 'Company Registration',
   'GST Return Filing', 'Mudra Loan', 'Project Reports', 'LLP Registration',
+  'Website Development', 'Mobile Apps',
 ]
 
 // ─── TESTIMONIALS ─────────────────────────────────────────────
@@ -692,14 +940,14 @@ export const ABOUT = {
 }
 
 // ─── SERVICE CATEGORIES (contact form dropdown) ──────────────
-export const SERVICE_CATEGORIES = ['PMEGP / Govt. Funding', 'Startup India (DPIIT)', 'GST', 'MSME / Udyam', 'Trademark', 'FSSAI', 'Import Export (IEC)', 'Company / Business Registration', 'Project Report / Loan Documentation', 'Other']
+export const SERVICE_CATEGORIES = ['PMEGP / Govt. Funding', 'Startup India (DPIIT)', 'GST', 'MSME / Udyam', 'Trademark', 'FSSAI', 'Import Export (IEC)', 'Company / Business Registration', 'Project Report / Loan Documentation', 'Website Development', 'Mobile App Development', 'Other']
 
 // ─── FAQS ────────────────────────────────────────────────────
 export const FAQS = [
   {
     id: 1,
     q: 'What services does Nexa Hub Services offer?',
-    a: 'We help startups and MSMEs with business registration — GST, MSME (Udyam), trademark, FSSAI, Import Export Code and company / LLP registration — plus government funding support (PMEGP loans, Startup India DPIIT recognition, Mudra, CGTMSE), project reports and loan documentation.',
+    a: 'We help startups and MSMEs with business registration — GST, MSME (Udyam), trademark, FSSAI, Import Export Code and company / LLP registration — plus government funding support (PMEGP loans, Startup India DPIIT recognition, Mudra, CGTMSE), project reports and loan documentation. We also build websites and mobile apps — e-commerce stores, business websites, booking apps and more.',
   },
   {
     id: 2,
@@ -725,20 +973,5 @@ export const FAQS = [
     id: 6,
     q: 'How quickly will you respond?',
     a: 'Quick response is our promise. Message us on WhatsApp at +91 98750 37579 and we usually reply within minutes — with a clear document checklist and a fixed quote.',
-  },
-]
-
-// ─── TEAM ──────────────────────────────────────────────────
-// Set `image` to an imported photo of the founder to replace the monogram
-export const TEAM = [
-  {
-    name: 'Yogi Surendra Nath',
-    role: 'Founder, Nexa Hub Services',
-    description:
-      'Yogi Surendra Nath founded Nexa Hub Services to empower startups and MSMEs with strategic advisory, funding, compliance and digital transformation. From documentation to filing and approvals, the Nexa Hub team handles everything with quick response and complete support — so entrepreneurs can focus on growing their business.',
-    quote: 'Your work, my responsibility.',
-    expertise: ['Business Registration', 'Govt. Funding & Loans', 'Startup Advisory', 'Compliance'],
-    linkedin: '',
-    image: null,
   },
 ]

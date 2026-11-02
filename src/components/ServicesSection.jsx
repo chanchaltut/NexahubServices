@@ -80,7 +80,7 @@ const ServicePanel = ({ service, onClose }) => {
               </li>
             ))}
           </ul>
-          <p className="text-gray-400 text-[12px] mt-4">* Government fees, where applicable, are charged at actuals.</p>
+          <p className="text-gray-400 text-[12px] mt-4">{service.footnote || '* Government fees, where applicable, are charged at actuals.'}</p>
         </div>
 
         <div className="p-5 border-t border-gray-100 pb-safe flex flex-col sm:flex-row gap-3">
@@ -153,7 +153,7 @@ const ServicesSection = () => {
           <div className="eyebrow mb-6">Our Services</div>
           <h2 className="section-title mb-4">Everything Your Business Needs, Under One Roof</h2>
           <p className="text-gray-600 text-[16px] md:text-[17px] leading-relaxed">
-            {PARENT_SERVICES.length} service categories, {SUB_SERVICE_COUNT}+ individual services — registrations, funding, filings and advisory, all handled by one team.
+            {PARENT_SERVICES.length} service categories, {SUB_SERVICE_COUNT}+ individual services — registrations, funding, filings, advisory, websites and apps, all handled by one team.
           </p>
         </div>
 

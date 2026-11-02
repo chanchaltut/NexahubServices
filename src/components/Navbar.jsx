@@ -54,26 +54,30 @@ const TopBar = () => (
 
 const MegaMenu = () => (
   <div className="absolute left-1/2 top-full -translate-x-1/2 pt-5 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300">
-    <div className="w-[840px] bg-white rounded-3xl shadow-2xl border border-gray-100 p-7 grid grid-cols-[1fr_1fr_1fr_210px] gap-7">
-      {NAV_SERVICE_GROUPS.map((group) => (
-        <div key={group.heading}>
-          <h4 className="text-[11px] font-bold text-brand tracking-widest uppercase mb-4">{group.heading}</h4>
-          <ul className="space-y-3">
-            {group.links.map((l) => (
-              <li key={l.href}>
-                <Link to={l.href} className="block text-[14px] font-medium text-gray-600 hover:text-brand hover:translate-x-1 transition-all">
-                  {l.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+    <div className="w-[880px] bg-white rounded-3xl shadow-2xl border border-gray-100 p-7">
+      <div className="grid grid-cols-4 gap-7">
+        {NAV_SERVICE_GROUPS.map((group) => (
+          <div key={group.heading}>
+            <h4 className="text-[11px] font-bold text-brand tracking-widest uppercase mb-4">{group.heading}</h4>
+            <ul className="space-y-3">
+              {group.links.map((l) => (
+                <li key={l.href}>
+                  <Link to={l.href} className="block text-[14px] font-medium text-gray-600 hover:text-brand hover:translate-x-1 transition-all">
+                    {l.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <div className="mt-6 rounded-xl bg-ink px-5 py-4 text-white flex items-center gap-4">
+        <i className="ri-customer-service-2-line text-2xl text-sun" />
+        <div className="flex-1 min-w-0">
+          <p className="font-bold text-[15px] leading-snug">Not sure what you need?</p>
+          <p className="text-white/60 text-[12px] leading-relaxed">Message us — quick response, free guidance.</p>
         </div>
-      ))}
-      <div className="rounded-xl bg-ink p-5 text-white flex flex-col">
-        <i className="ri-customer-service-2-line text-2xl text-sun mb-3" />
-        <p className="font-bold text-[15px] leading-snug mb-1">Not sure what you need?</p>
-        <p className="text-white/60 text-[12px] leading-relaxed mb-4">Message us — quick response, free guidance.</p>
-        <a href={waLink('Hi! I need help choosing the right service.')} target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center gap-1.5 text-[13px] font-bold text-sun hover:gap-2.5 transition-all">
+        <a href={waLink('Hi! I need help choosing the right service.')} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[13px] font-bold text-sun hover:gap-2.5 transition-all">
           Ask on WhatsApp <i className="ri-arrow-right-line" />
         </a>
       </div>

@@ -101,7 +101,7 @@ const ServicePage = () => {
 
             {service.documents && (
               <>
-                <h3 className="text-xl font-bold mb-5">Documents required</h3>
+                <h3 className="text-xl font-bold mb-5">{service.documentsTitle || 'Documents required'}</h3>
                 <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
                   {service.documents.map((d) => (
                     <li key={d} className="flex items-start gap-3 text-gray-600 text-[15px] leading-snug">
@@ -140,6 +140,46 @@ const ServicePage = () => {
           </aside>
         </div>
       </section>
+
+      {service.niches && (
+        <section className="py-16 md:py-20 bg-mist" aria-label={service.nichesTitle}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="text-center max-w-2xl mx-auto mb-12">
+              <div className="eyebrow mb-6">Built for your business</div>
+              <h2 className="section-title mb-4">{service.nichesTitle}</h2>
+              <p className="text-gray-600 text-[16px] leading-relaxed">
+                Pick the type closest to your business — we tailor the features to how you sell, book or serve customers.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-5">
+              {service.niches.map((n) => (
+                <div key={n.title} className="bg-white rounded-3xl border border-gray-100 hover:border-brand/40 hover:shadow-soft p-7 sm:p-8 flex flex-col transition-all duration-300">
+                  <div className="flex items-start gap-4 mb-6">
+                    <span className="w-12 h-12 rounded-xl bg-brand-light ring-1 ring-brand/15 flex items-center justify-center flex-shrink-0">
+                      <i className={`${n.icon} text-2xl text-brand`} />
+                    </span>
+                    <div className="min-w-0">
+                      <h3 className="text-xl font-bold leading-snug">{n.title}</h3>
+                      <p className="text-gray-500 text-[14px] leading-snug mt-1">{n.for}</p>
+                    </div>
+                  </div>
+                  <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-3 mb-7 flex-1">
+                    {n.features.map((f) => (
+                      <li key={f} className="flex items-start gap-2.5 text-ink text-[14.5px] leading-snug">
+                        <i className="ri-checkbox-circle-fill text-brand text-lg leading-none mt-0.5" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                  <a href={waLink(`Hi! I'm interested in a ${n.title} from ${BRAND.name}. Please guide me.`)} target="_blank" rel="noopener noreferrer" className="btn-ghost w-full sm:w-fit !px-5">
+                    <i className="ri-whatsapp-line text-lg" /> Enquire about this
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <ProcessSection />
 

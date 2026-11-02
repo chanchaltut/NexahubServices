@@ -25,6 +25,8 @@ const usefulLinks = [
   { name: 'Loan Documentation', href: '/services/loan-documentation' },
   { name: 'Company Registration', href: '/services/business-registration' },
   { name: 'Project Reports & CMA', href: '/services/project-reports' },
+  { name: 'Website Development', href: '/services/website-development' },
+  { name: 'Mobile App Development', href: '/services/app-development' },
   { name: 'Privacy Policy', href: '/privacy-policy' },
   { name: 'Terms & Conditions', href: '/terms-conditions' },
 ];
