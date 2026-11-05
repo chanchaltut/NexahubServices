@@ -13,7 +13,7 @@ npm run build    # production build → dist/
 | What | Where |
 | --- | --- |
 | Logo | `src/components/Logo.jsx` → import the logo files and set `LOGO_DARK` / `LOGO_LIGHT` |
-| Favicons & social share images | `public/favicon-32.png`, `favicon-192.png`, `favicon-512.png`, `favicon-maskable-512.png`, `og-image.jpg`, `twitter-card.jpg` |
+| Favicons & social share images | `public/favicon-32.png`, `favicon-192.png`, `favicon-512.png`, `favicon-maskable-512.png`, `og-image.jpg` |
 | Business email (currently `info@nexahubservices.in`) | `src/utils/constants.js` → `BRAND.email`, `index.html`, `public/llms.txt` |
 | Office street address / Google Maps link (optional) | `src/utils/constants.js` → `BRAND.address`, `BRAND.mapLink` |
 | Social profile links (icons appear automatically once filled) | `src/utils/constants.js` → `BRAND.social`, `index.html` → `sameAs` |
